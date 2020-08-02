@@ -1,0 +1,1348 @@
+<!-- 
+    Ebbe a html-be tervezem a sima, régi stílusú jegyzeteim. Itt-ott egy két képet be kell
+    majd illesztenem, de ezen kívűl törekszem egy igazi "oldfashioned" jegyzetre. Csak HTML
+    kódot szeretnék ebben a verzióban használni.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Fashion Style Jegyzetek</title>
+</head>
+
+<body>
+    <!-- Navigációs léc -->
+    <div id="nav">
+        Navigáció:
+    </div>
+
+    <!-- Cím és tartalomjegyzék -->
+    <div>
+        <h1>*** Old Fashion Style Jegyzeteim ***</h1>
+        <h2>Tartalomjegyzék</h2>
+
+        <ol>
+            <li><a href="#1">Otthoni Munkavégzés</a>
+
+                <ul>
+                    <li><a href="#1/1">Home Office és Otthoni Munkavégzés</a></li>
+                    <li><a href="#1/2">Microsoft Team</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#2">A Számítógépekről és a Windows Alapok</a>
+                <ul>
+                    <li><a href="#2/1">A Számítőgépekről általlában</a></li>
+                    <li><a href="#2/2">Felépítésük és összetevőik</a></li>
+                    <li><a href="#2/3">Windows Alapok</a></li>
+                    <li><a href="#2/4">Batch Programozás</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#3">Hálózatokról - Gyártófüggetlen</a>
+                <ul>
+                    <li><a href="#3/1">Hálózati alapismeretek</a></li>
+                    <li><a href="#3/2">Hálózati eszközök</a></li>
+                    <li><a href="#3/3">Felhőszolgáltatásokról</a></li>
+                    <li><a href="#3/4">Alapszintű programok</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#4">Informatikai Tudatosság</a>
+                <ul>
+                    <li><a href="#4/1">Biztonság az Informatikában</a></li>
+                    <li><a href="#4/2">GDPR - Ezt még ki kell jegyzetelni :( </a></li>
+                </ul>
+            </li>
+
+            <li><a href="#5">Fejlesztői Környezet Kialakítása</a>
+                <ul>
+                    <li><a href="#5/1">Visual Studio Code, Node.js</a></li>
+                    <li><a href="#5/2">Git & GitHub</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#6">Sprint 1 - Statikus HTML Oldalak és pubikálása Giten</a>
+                <ul>
+                    <li><a href="#6/1">A HTML Megismerése</a></li>
+                    <li><a href="#6/2">Egy weblap publikálása a Git-en</a></li>
+                </ul>
+            </li>
+
+        </ol>
+    </div>
+
+    <div id="1">
+        <h3>1. Otthoni Munkavégzés: <span><a href="#nav">Vissza a tartalomjegyzékhez</a></span></h3>
+        <h4 id="1/1">Home Office: </h4>
+        <p>A távmunkavégzés, a munkáltató telephelyétől elkükönült helyen, rendszeresen folytatott olyan tevékenység,
+            amelyet számítástechnikai eszközzel végeznek és eredményét elektronikusan továbbítják.<br>
+            Előnyei: Otthon vagyunk, utazási idő megtakarítása, nyugodt környezet, pozitív hangulat.<br>
+            Hátrányai: Időbeosztás, figyelemelterelők, hiányzó rendszer, kísértések.<br>
+            Fontos a szemléletváltás.<br>
+            Régen: Otthon.<br>
+            Most: Munkahely és otthon.<br>
+            Régi szokásaink helyett új szokásokat kell kialakítani, amik működni fognak.<br>
+            Ez az új helyzet egy változás, ami egy belső pszihés folyamatot indít el bennünk. Első szakasza az
+            elutasítás, ellenállás, kifogások keresése <-> megoldások keresése.
+        </p>
+
+        <p>Alapszabályok, amiket érdemes betartani: 8?<br>
+            Kelj időben, ha nem struktúráljuk ki az időnket, elúszunk..<br>
+            Öltözzünk fel a munkához. Segíti a munkára való ráhangolódás.<br>
+            Legyen egy dedikált hely, amit a munkára használunk. Ne az ágyból dolgozzunk, stb..<br>
+            Ne hagyjuk, hogy beszippantson a közösségi média.<br>
+            Tartsunk szüneteket és ebédidőt. Óránként 10perc szünet.<br>
+            Mozogjunk. Napi pár kilométer gyalog, segítik a koncentrációt, stb..<br>
+            Lekacsolni, kikapcsolódni. Határok, munkaidő, kikapcsolás.<br>
+            Családtagjainkkal működjünk együtt új módon.<br><br>
+            A figyelemről:<br>
+            Ingerek. Érzékszerveink túlterhelése. Lényeges VS lényegtelen. A figyelem az a képesség, amivel bizonyos
+            információk részleteit kiemelünk, míg más információkat ezzel egyidejűleg figyelmen kívűl hagyunk.
+            Tartóssága korlátozott idejű, befolyásoló tényzők módosítják. Zavaró ingereket csökkenteni kell.<br>
+            Multitasking. Akkor lehetséges, ha az egyik tevékenység reflex szintű.A hosszú távú multitasking
+            hibásteljesítményhez vezet.<br>
+            Bioritmus. A koncentrációs képességünk sem működik ugyan úgy minden napszakban.<br>
+            Teljesítmény csúcspontjai. Pacsirta és bagoly. Az átlagos középérték 11 és 15 között van.<br>
+        </p>
+
+        <p>Felhő alapú munkavégzés:<br>
+            Folyamatos online jelenlét. Bárhonnan, bárkinek, bármikor elérhető.<br>
+            Virtuális kommunikáció. Nem megfelelő kommunikáció, konfliktusforrás. Ezt a kommunikáció típust tudasotítani
+            kell.<br>
+            Hálózati etikett, netikett - az internetre vonatkozó illemszabályok, szokások, viselkedési formák. Az
+            emailek során, rövid, tömör, udvarias, indulatmentes legyen, olvassuk át, elenőrizzük az adatait még mielőtt
+            elküldjük.<br>
+            Chat. Két vagy több ember közötti online társalgási forma. Fontos a csoport ismerete, ha valamit nem értünk,
+            kérdezzünk vissza, emojik használata a pontosabb kifelyezésekhez, moderátor, ha többen vannak a
+            csoportba.<br>
+            Videókonferencia. Kép és hang egyidejű közvetítése.<br>
+            Közös munkaanyag szerkesztése. Célszerű moderátort választani és megjelölni, ki mit csinál. Változásokat
+            megjegyzésekkel ellátni.
+        </p>
+
+        <p>Egyéni hatékonyság fejlesztése - az önszervezés módszertana:<br>
+            Munkaszervezés: Meghatározzuk, hogy mit és hogy csináljunk, milyen eszközökkel, milyen erőforrásokkal.<br>
+            Önszervezés: Saját magunk próbáljuk megszervezni, amit a vezetők el akarnak érni a vállalati célok
+            érdekében.<br>
+            Időrablók tudatosítása. Hátráltatóak, teljesítmény csökkentő hatása van.<br>
+            Tevékenység lista. Feleadatok összegyüjtése, rögzítése. Fokuszáltat, motivál, sikerélményhez juttat, segít
+            az ütemezésben.<br>
+            Prioritás állítás: sürgős , nem sürgős , fontos , nem fontos<br>
+            Kanban tábla/módszer. Vizuális megjelenítés. Átláthatóvá tehetőek a feladatok, megmutatja az
+            elakadásokat,stb.. Jó látható helyen legyen.<br>
+            | Elkészíteni | Folyamatban | Kész |<br>
+            Egyszerre max 3 feladat legyen egy oszlopban.<br>
+            Mi a feladat, a feladat sorszáma, meddig kell elkészíteni, az elkészítéshez becsült idő, kié a feladat.
+        </p>
+
+        <p>Együttműködés: A csoport tagjai közösen többet érnek el, mint egyedül. Új körölmények és megoldások,
+            digitális anyagok helytől független elérése, más viselkedési minták.<br>
+            Munkacsoportok sikeres működése: Együttműködési keretek tisztázása, kommunikációs felület, feladatok és
+            határidők pontosítása, napi szintű nyitó és záró meeting, vis major esetén kontaktok, párhuzamos
+            munkafolyamatok elkerülése, elvégzett feladatok közlése.<br>
+            Emberi tényezők: Biztonság kialakítása, figyelmesség egymás iránt, empátia -értsünk meg másokat-, egymás
+            támogatása(technikai, emberi oldalról), megoldások keresése, kérdezzünk minnél többet.<br>
+        </p>
+
+        <p>Az online térben való tudatos kommunikáció:<br>
+            Nehézségei: Ritkánlátjuk a másik személyt, kevésbé figyelünk, másdolgokra is figyelünk, monoton lehet. A
+            digitális jelenlét hiánya gyanús lehet.<br>
+            Kérdések jelentőssége: Kérdezzünk sokat, kérdezzünk jó, tisztázó és értelmező kérdéseket tegyünk föl.<br>
+            Hasznos kommunikációs technikák: Tagoljunk, emeljük ki a lényeget, összegezzünk szakaszonként, "tehát, ha
+            jól értem, azt mondod, hogy..."<br>
+            A hatékony online értekezlet jellemzői: adjunk időt a ráhangolódásra, kezdés-zárás pontos betartása,
+            felkészülten érkezés, jól előkészytett-megtervezett legyen, érintettek legyenek jelen, lényegre törő
+            kommunikáció, cél tisztázása, résztvevők bevonása, összegzés.
+        </p>
+
+        <p>Stresszkezelés az otthoni munkakörnyezetben:<br>
+            A mindennapi élet velejárója, mindenkinél más a kiváltó inger(stresszor), különbözőképpen reagálunk rá.<br>
+            Fogalma: fizikai vagy pszichológiai jól létet veszélyeztető esemény; az erre adott válaszreakció a stressz.
+            Ilyenek a befolyásolhatatlan, megjósolhatatlan események, próbatételek.<br>
+            Hatásai: pozitív(teljesítmény fokozó) vagy negatív(romboló).<br>
+            Tünetei: Emésztési funkciók csökkenése, nő a szívritmus, légzésszám, anyagcsere funkciók, hormonok
+            szabadulnak fel.<br>
+            Lélektani tünetei: Félelem, szorongás, harag, nyomás, depresszió, koncentráció zavar.<br>
+            Stresszmenedzsment: Nem kell megszüntetni, hanem kézben kell tartani. Apró technikák a munkanapokra:
+            szünetek, mozogjunk, lélegezzünk tudatosan, étkezzünk megfelelően, tervezzük meg a napi feladatokat,
+            bioritmusunkoz igazítsuk a prioritás feladatokat, kevesebb kávét igyunk, kacagjunk-kocogjunk-pozitívan
+            gondolkozzunk.
+        </p>
+
+        <p>Munka és magánélet egyensúlya a HO-ban:<br>
+            Nagy fokú tudatosságot igényel, szakmai és magánéleti feladatok szétválasztása. Tervezés, időbeosztás.<br>
+            Szerepek: beosztott, vezető, munkatárs, projekt tag. Barát, házastárs, rokon, szomszéd,stb..<br>
+            Nehézségek és lehetőségek az egyensúly kialakításaban: A bizalomteljes légkör támogató hatása, az utazási
+            idő a magánéletre fordítható, a munkaállomás segíti a differenciálást, a teljesítménykényszer-veszélyforrás,
+            a nehézségek felismerése.<br>
+            Mindig elérhetőnek kell lenni? Állandó összeköttetés, túlterhelés, állandó készenlét - technofüggőség.<br>
+            Megoldás: fizikai, pszihológiai, mentális pihenés és regenerálódás.<br>
+            Egyensúly: Az élet dinamikus, változás>egyensúlyból való kibillenés, mi a fontos és értékes számunkra, régi
+            rutinok újragondolása, új rutinok kialakítása.
+        </p>
+        <a href="#nav">Vissza a tartalomjegyzékhez</a>
+
+        <h4 id="1/2">Microsoft Team</h4>
+        <p>Chat alapú munkavégzés eszköze. Lehetőség beszélgetésre, fájlmegosztásra, alkalmazások integrálására.
+            www.office.com oladalon lehet bejelentkezni vagy letölteni az asztali alkalmazást(egy és u.a.)..<br>
+            Ide nem nagyon írnék semmit, ha akarom, majd megnézem.
+        </p>
+        <a href="#nav">Vissza a tartalomjegyzékhez</a>
+    </div>
+    <hr>
+
+    <div id="2">
+        <h3>A Számítógépekről és a Windows Alapok <a href="#nav">Vissza a tartalomjegyzékhez</a></h3>
+        <h4 id="2/1">A számítógépekről általlában</h4>
+        <p>Neumann(János) elvek: Nagy általlánosságban azt mondhatjuk, hogy a ma használt számítógépek mindegyike ezeket
+            az elveket használja(Ő állapította meg vagy szedte össze).<br>
+            - teljesen elektronikus működés: Neumann korában elekron csöves, később tranzisztoros és a mai napokban
+            nyomtatott áramkörös<br>
+            - kettes számrendszer használata: legegszerűbb számrendszer, minden matematikai művelet vissza van vezetve
+            bináris számrendszerre. Így a tárolás és a feldolgozás könnyebb, illetve gyorsítható.<br>
+            - belső memória használata: minden számítógépnek rendelkeznie kell több féle belső memóriával is. A közös
+            tulajdonságuk, hogy adatot szeretnénk benne tárolni.<br>
+            - tárolt program elve: ?hogy az adafeldolgozás gyorsabban tudjon működni?<br>
+            - soros utasítás-végrehajtás: szekvenciális. Akkoriban úgy gondolták, hogy az utasításoknak mindenképpen
+            egymás után kell következnie. Az egyik csinál valamit, amit majd aztán egy későbbi utasítás értelmez és
+            feldolgoz. Manapság ezt picit módosítjuk, máshogy is gondolhatjuk, mondhatjuk azt is, hogy a párhuzamos
+            utasítás végrehajtásnak is van értelme.<br>
+            - univerzális felhasználhatóság: célrendszerek, célezközök már régebben is léteztek, amiket egy bizonyos
+            feladat elvégzésére készítettek. Itt viszont az volt a cél, hogy legyen egy általlános környezet, egy
+            általlános hardware, amiben majd a programozó által meghatározott utasítások fogják eldönteni, hogy majd
+            ténylegesen mit akarunk csinálni. Turing is megpróbálta lefektetni az elekronikus számítógépek alapjait és
+            hasonló dolgokra jött rá, mint Neumann, de a megvalósítás a Neumann elvek alapján történt meg. De Turing is
+            részt vett elekronikus számítógépek megalkotásában, felhasználásában.<br>
+            5 funkcionális elemből tevődik össze:<br>
+            1. ALU - Arithmetical and Logical Unit<br>
+            2. CU - Controll Unit<br>
+            3. Memória<br>
+            4. Input (I/O)<br>
+            5. Output ( I/O)<br>
+        </p>
+
+        <h4 id="2/2">Felépítésük és összetevőik <a href="#nav">Vissza a tartalomjegyzékhez</a></h4>
+        <p>Számítógép felépítése:<br>
+            <img src="" alt="">
+            Központi egységben találjuk a processzort és a processzorhoz tartozó belső gyors memóriaelemeket -
+            regisztereket. A processzort tovább lehet bontani: Arithmetikai és Logikai egység - ez hajtja végre az
+            utasításainkat és dolgozza fel azokat. És a vezérlő egység, a Controll Unit, ami az egészet vezérelni fogja.
+            Mindenféleképpen kell belső memóri, operatív memória, operatív tár. Lehet csak írható vagy véletlen elérésű
+            újra írható. ROM - read only memory --> csak olvasható. RAM - random access memory --> "általlános belső
+            memória". Illetve a CACHE, ami egy speciális memória terület, amit kifejezetten a gyorsításra, adatokhoz
+            való gyorsabb hozzáféréshez szoktuk használni.<br>
+            Perifériák. Ezekkel bővíthetjük a központi egységet, illetve a központi egység és a perifériák közötti
+            összeköttetésre is szügség lesz. Ezeket buszoknak szoktuk hívi. Különböző buszokkal találkozhatunk,
+            csatornáknak képzelhetjük el ezeket, amelyek összekötik a komponenseket és szállítják a kommunikációt. Tehát
+            konkrétan az adatokat vagy az adatok eléréséhez szügséges címinformációt vagy a működéshez szügséges vezérlő
+            utasításokat.<br>
+        </p>
+
+        <p>CPU: - central processing unit - központi végrehajtó egység
+            feladata: a futtatott program utasításainak értelmezése és végrehajtása, illetve az ezekkel kapcsolatos
+            matematikai műveletek elvégzése.<br>
+            fő részei: <br>
+            CU: vezérlő egység: gondoskodik az időzített működésről<br>
+            ALU: aritmetikai és logikai egység: a tényleges műveletvégzésért felelős regiszterek, cache-k: a
+            végrehajtások gyorsítása. A regiszterek, kis számú, nagyon gyors sebességű memóri elemek. Közvetlenűl a
+            processzor általl végrehajtott utasítások tárolására, átmeneti tárolására helyezkednek el a processzoron
+            belül. A cache nagyon hasonló, nagyobb mérete van, de még mindig nagyon gyors, bár kicsit lasabb, nem csak
+            utasításokat, hanem a feldolgozásra kerülő adatokat is el tudjuk majd helyezni.
+        </p>
+
+        <p>Alaplap:<br>
+            A csatlakozó eszközök(processzor/ok, memóriák, I/O eszközök) az ugynevezett buszok segítségével tartják a
+            kapcsolatot az alaplappal.<br>
+            A buszok különböző logikai célt tölthetnek be. Léteznek cím, adat és vezérlő buszok. A két utóbbi a
+            leggyakoribb. A belső buszokon belül fontos a címzés is, például a különböző memória elérés.
+        </p>
+
+        <p>Háttértárak: Az adatokat valamilyen módon tárolni kell, ezekre különböző perifériákat tudunk használni.<br>
+            HDD: adatokat nem felejtő, újraírható háttértár. Kifutó félben van, de azért még használják, mágnesesség
+            elvén működik. A szabványosítás értelmében, ezek is szabvány méretűek. Relatív olcsó, nagy kapacitású,
+            közepes sebességű háttértárat biztosít.<br>
+            Tartozik hozzájuk(a kapacitásuktól függően) 8-128MB cache memória(gyorsítótár), amely kiegyenlíti a HDD és a
+            RAM közötti sebességkülömbséget. Egyféle előolvasás, amivel megpróbáljuk gyorsítani az adathozzáférést a
+            processzor és egyéb belső elemek számára.<br>
+            Olvasási, írási sebessége közepes, 50-150MG/sec átlagosan.<br>
+            Egy fizikai winchestert több partícióra is oszthatunk és valójában ezek kapnak betűjelet.<br>
+            <img src="" alt="">
+
+            Definíciók a HHD-kel kapcsolatban:<br>
+            Részben informatikai, részben mechanikaiak lehetnek az adattárolásra vonatkozóan.<br>
+            A kapacitást valamilyen módon kezelni szeretnénk, ehhez szügséges az, hogy az adott disknek, a tányérokon
+            lévő kapacitást valamilyen egységes méretű blokkokra, szektorokra, KLASZTEREKRE bontsuk fel. Ennek oka, hogy
+            az adott operációs rendszer, ami használni fogja, kell tudja, hogy a különböző adatok, hol helyezkednek el,
+            mennyi helyet foglalnak el, hol van szabad vagy foglalt kapacitás. A tárolókat nem egy egészként kezeljük,
+            hanem kisebb kezelhető egységekre bontjuk fel, ezeket hívjuk úgy, hogy SZEKTOR. Ami lehet mértani, vagyis
+            fizikailag meghatározó helyet foglal el és lehet informatikai szektor, ami egy sorszámozott kapacitás
+            egységet/elemet fog jelenteni. 2 kb, 4kb, stb..<br>
+            Több összetartozó szektort hívhatunk egy klaszternek, valamilyen vezérlőelv alapján ezek összekapcsolásra
+            kerültek.<br>
+            Az adatokat koncentrikus körökben íruk fel a tányérra, ezeket a köröket hívhatjuk sávnak.<br>
+            Tartalmát megörzi, illetve szügség esetén újraírható.<br>
+
+            SDD: - Solid State Disk - <br>
+            Nincs mozgó alkatrész benne, félvezetős memóriát használó adattároló eszköz. Ezeknél fogva várható
+            élettartamuk jelentősen nagyobb, illetve teljesítményük is jobb, mint a HDD-knek. Hangtalan, kevesebb hőt
+            termel, kevesebb energiát fogyaszt és nincsenek a mechanikából adódó késleltetések. Átlagos írási/olvasási
+            sebessége akár több GB/sec is lehet.<br>
+            Ezeket akár kombinálni is lehetséges, OP rendszer és a gyakran használatos fileok SDD, a bizt. másolat és
+            archive dolok egy olcsóbb HDD-n.Egy nagyobb szerver esetén, az OP rendszer képes megfigyelni, hogy melyek
+            azok a fileok, amiket gyakran használunk és azokat egy SSDre rakja át...
+        </p>
+
+        <p>Memóriák:<br>
+            Memóriahierarchia:<br>
+            <img src="" alt="">
+            A memóriáknak több fajtája van, jellemzőik alapján különböztetjük meg őket, méret, teljesítmény, sebesség,
+            felhasználás célja is nagyon fontos ilyen szempontból.<br>
+            A processzor közelében vannak a regiszterek, illetve a processzorban lévő cache. Ezeknél a legfontosabb
+            szempont a nagyon nagy sebesség, a teljesítmény. Kevésbé fontos, az ára, mivel sok nem helyezkedik el a
+            processzoron belül.<br>
+            A következő a fizikai memória, még mindig nagyon gyor perifériák, de a méret már jóval nagyobb, ez az
+            Operatív Memória, leginkább a RAM, itt azért már GB-ban szoktunk gondolkozni. Itt tartjuk az OP-t és azokat
+            az adatokat, amikkel aktuálisan foglalkozik a processzor. Teljesítménye lasabb a cachehez képest, de még
+            mindig gyorsabb, mint egy háttértár.<br>
+            A követhezőek a háttértárak, HDD, SSD. Itt már a kapacitás a fontosabb.<br>
+            A legutolsó pedig a virtuális memória, ami egy átmenet a RAM és a háttértárak között. Ha egy OPnek a RAM nem
+            megfelelő mennyiségű, akkor fizikailag nem létező módon, ki tudjuk kiterjesztjük az általla használt
+            memóriát, ez valamilyen SSD vagy HDD csatolását fogja jelenteni.<br>
+            A regiszterek: A processzor belső tárolói, azok az adatok tárolódnak benne, amelyek épp feldolgozás alatt
+            állnak a processzorban. Mérete: 32bit, 64bit, elérési ideje: 0,4ns.<br>
+            A cache-ek: A processzor átmeneti gyorsítótára, a gyakran használni kívánt adatokat tároljuk átmenetileg
+            bennük, többszintűek, attól függ, hogy milyen közel vagyunk a processzorhoz: L1 64kb, 1.5 ns, L2 256kb, 5ns,
+            L3 24MB 20ns. Ezek a regiszterekkel együtt nagymértékben meghatározzák a processzorok teljesítményét.<br>
+            RAM: Írható, olvasható memória. Ez tárolja a CPU által végrehajtandó, futó programokat és a feldolgozásra
+            váró adatokat. Állando energiaellátást igényel, mérete több GB, elérési ideje ~100ns. Az operativ memória az
+            egyik leggyorsabb véetlen hozzáférésű tartalmat tartalmazó komponens/memória egy számítógépben.<br>
+            Virtuális Memória: a RAM kiterjesztése. A HDD vagy SSD egy elkülönített része. Akkor van rá szügség, ha
+            elfogyott a RAM, de még szügség van memóriára. Mérete altalában a fizikai méretének a függvényében
+            automatikusan kerül beállításra, elérési ideje ~4ms. Ha már gyakorlati okoknál fogva nem lehet bővíteni,
+            vagy szervereknél menet közben változik meg a felhasználási igény, akkor dinamikusan az átmeneti
+            igénynövekedést ki lehet vele szolgálni. Ha az operatív memória egy adott alkalmazás környezet
+            kiszolgálásához kicsi, akkor bizonyos memória területeket átmenetileg ki tudunk másolni, ezt hívják úgy,
+            hogy paging/lapozás/tördelés.
+        </p>
+
+        <h4 id="2/3">Windows Alapok <a href="#nav">Vissza a tartalomjegyzékhez</a></h4>
+        <p>Operációs Rendszer Részei: (OP - egy olyan bonyolult kód, amit elhelyezünk a hardveren, hogy az erőforrásait,
+            hozzáféréseit optimalizálni tudjuk.)<br>
+            -Kernel, vagyis a magja: ez a legalapvetőbb funkciókat látja el, ezek azok a folyamatok/feladatok, amiket
+            nem bízunk a felhasználókra, hanem maga az OP végzi el magának, minimális beleszólást engedve a fontosabb
+            dolgokba, pl.: memóriakezelés. A memória egy fontos erőforrás, kell hogy jusson az OP-nek, alkalmazásoknak,
+            ezek koordinálását az OP magja végzi, csak úgy, mint a periféria kezelést is, illetve a komponensek
+            kezelését. Továbbá: állománykezelés - a távoli hálózaton elérhető adatok kezelése vagy lokális - vagy a
+            metaadatok(ki mihez férhet hozzá), hibakezelés(kivételek kezelése, a váratlan események kezelése), ezekből
+            adódik a védelem és a naplózás.<br>
+            -Shell(héjj): A felhasználói felület biztosítása, ami nem egyezik a mai grafikus felületekkel, illetve nem
+            egy cél operációs rendszer, ami csak "bizonyos" feladatra hivatott. A shell lehet egy parancssor vagy egy
+            végfelhasználó számára könnyebb felület(GUI aka. Graphic Unit Interface). Ezeken keresztűl az elérhető
+            funkciókat megmutatnánk, interektivitást tennénk lehetővé, alkalmazásainkat kezelnénk.<br>
+            -API: Application Program Interface (alkalmazói programozási interfész), ez egy illesztési felület a
+            rendszermag és az alkalmazási alrendszer között. Az API segítségével lehetséges egy programrendszer
+            szolgáltatásait használni anélkül, hogy annak belső működését ismernénk. Az API-t a rendszerhéj és a
+            szervízprogramok is használják.<br>
+            -Az OP rendszereknek kell tudni futtatni alkalmazásokat, függetlenül attól, hogy már kész, beépített
+            alkalmazásaik is vannak. Egy OP rendszer akkor fog elterjedni, ha ki lehet lépni abból a szűk körből, amit a
+            rendszer gyári alkalmazásai jelentenek és fel tudjuk ruházni azt a környezetet különböző más lehetőségekkel.
+            Ehhez kell egy felület, amin keresztűl az alkalmazások illeszkedni tudnak az operációs rendszerhez, pl.:
+            API. Ez meghatározza részben az utasításkészletet, a csatlakozási pontokat, az erőforrás kezelést,
+            jogosítványi rendszert, amivel az OP rendelkezik és illeszkednie kell egy alkalmazásnak. Ez az alkalmazás
+            függvényében lehet lokális vagy hálózati tevékenység, grafikus vagy adatkezelés jellegű. Az API-kban ezek
+            mind definiálva vannak, így ez azt is lehetővé teszi, hogy ne kelljen minden alkalmazásnál ezeket
+            megvalósítani, hanem egyszerűen lehessen hivatkozni. Az OP rendszer gyártója ezt publikálja, hogy minnél
+            több alkalmazás készüljön a rendszeréhez.<br>
+            -Utility-k vagyis szervízprogramok: Az OP rendszer több részből áll össze, kernel, shell és kellenek olyan
+            adminisztrációs felületek, ahol az adott OP rendszer személyre szabható, meghatározni, hogy abban a
+            köznyezetben mit, hogy kell csinálni. Ezek a programok a szervízprogramok, amelyek lehetnek adminisztratív,
+            információs vagy üzemeltetési feladatokat elvégző programok, monitorozás. Akár interaktív formában, de
+            legtöbb esetben automatizálhatóak is, ekkor a háttérben gyüjtik az adatokat, kiértékelik,
+            figyelmeztetnek.<br>
+            -Szolgáltatások: Egy mai OP rendszerben sok olyan tevékenység van aminek folyamatosan működni kell, ezek a
+            (windows környezetben) szolgáltatások. Általában háttérben futó folyamatokról van szó, nincs külön
+            kivezetett felhasználói felületük, egy adott funkciót teljesítenek alacsony szinten. Ezek az OP rendszer
+            elindításával elindulnak és előre meghatározott értékek szerint végzik a feladatukat. Konzolokon lehet
+            vezérelni őket. Windowsban a services.msc, Win+r. Egy megszokott win konzol fog elindulni, ahol látjuk a
+            szolgáltatásokat, amelyek az adott rendszerben telapítésre kerültek. Nem minden szolgáltatás fut, de az
+            állapota megnézhető. Ha a hálózat felöl vagy lokálisan ráutaló magatartást kapunk, akkor majd elindul és
+            végzi a tevékenységét. A szolgáltatásoknak különböző tulajdonságaik vannak, valamilyen alap beállításokkal
+            rendelkeznie kell ahhoz, hogy az OP R tudja azt, hogy mit, hogyan, milyen hozzáférésekkel, kinek a nevében,
+            fontos, hogy milyen sorrendben indítson el és akkor ezek a funkciók ténylegesen működhessenek. Ezeket az
+            adminisztrátor valamilyen szinten befolyásolhatja, de maga az Op R állítja be magának a telepítésekor. <br>
+            -Feladatkezelő: - taskmgr -, Ugyen vannak olyan applikációk, amelyek egy automatikuan indulnak el és egy
+            bizonyos funkciót látnak el, illetve amikor egy interakció révén indulnak el, pl ha nekem kell valami. Ebből
+            a kettőből áll össze egy feledat lista, amit az OP Rnek futtatnia kell, a meglévő erőforrásai segítségével.
+            A Win-ban ez a konzol a taskmgr, feladatkezelő. Itt már nem csak a háttérben futó alacsony szintű processzek
+            listáját kapom meg, hanem az aktuális felhasználó által futnak folyamatok. Továbbá ezek alapvető adatait is
+            lehet látni, memóriaigény, állapot, hálózati igényét, aka., az erőforrás igényüket. Adminisztratív jogokkal
+            minimális interaktivitás itt is elérhető. Fontos eszköz, mert látni, hogy az OP R épp mivel foglalkozik, van
+            elfoglalva.<br>
+            -Fájlok: Az OP R számára fontosak az adat tartalmak, kéznél kell legyenek, hogy azokkal dolgozni tudjanak.
+            Ezeket fájlok képében, adatállományok képében tudjuk elképzelni. A fájlformátum azon eljárásnak
+            meghatározása, hogy egy számítógépes adat miképpen tárolható fizikai adathordozón, és hogyan jeleníthető meg
+            egységes módon. A legtöbb OP Rnél vannak preferált fájlformátumok, adatformátumok, vannak univerzálisak,
+            amelyek a különböző OP Rk közötti átjárhatóságot biztosítják. Ezek a fileformátumok és a hozzájuk tartozó
+            filerendszerek egyéb adatok tárolására is alkalmasak. A mai OP Rkben egy file nem csak az adattartalmat
+            fogja hordozni, hanem a hozzá tartozó hozzáférési jogosítványokat is, akár a tulajdonost, akinek extra
+            hozzáférései lehetnek, a titkosítási vagy ömörítési állapotot is képesek lesznek hordozni. Régebbi és új
+            formátumokat is képesek az OP Rk használni. A programok a fájlokat mint adatfolyamokat használják.<br>
+            -Fájltársítások: Az OP Rk rengeteg kényelmi funkciókkal bírnak, ilyenek a fájlformátumok automatikus
+            azonosítása és összekötése. Fájltársítások az asszociációk, egy konfigurációs adatbárisban leírjuk azt, hogy
+            egy bizonyos fájlformátum(kiterjesztés), az milyen alkalmazáshoz társuljon autómatikusan.
+        </p>
+
+        <p>Registry: Az OP Rk hogy mit hogyan kezeljenek, mit milyen sorrendben indítson el, milyen felhasználók
+            használhatjár a rendszert, a beállításaik vagy akár a fileasszociáció. Az ilyen információk a konfigurációs
+            adatbázisban vannak, a "registry"-ben/rendszerleíró adatbázisban. A mai OP Rkben már nagyon komplex, nagy
+            méretű adatbázis, speciális helyen, speciális hozzáférésekkel. Egy induló állapotot az OP R telepítésekor
+            megkapunk, a keret elkészül és ez folyamatosan bővülni fog ahogy "használjuk" az OP R-t.<br>
+            Régi OP Rkben volt ilyen karakteres állomány, autoexec.bat és config.sys, ezek elenyészőek voltak ahhoz
+            képest, amik a mai OP Rkben megtalálhatók. Maga a registry egy struktúrát mutat, hogy agz emberi szemnek se
+            legyen annyira összetett, időnként szügség lehet, hogy keressünk benne, módosítsunk bejegyzéseket. Ezért van
+            egy grafikus felület is, a szokásos konzol, beletekintsünk, illetve 5 szekcióra, HIVE-ra bomlik fel maga a
+            registry. Így külön lehet vonni az OP Rre vonatkozó beállításokat, ettől le tudjuk választani a
+            felhasználó/k-ra vonatkozó beállításokat. A registry kulcsok és alkulcsokból áll, itt leginkább értékadásra
+            gondolunk. A telepített programok listája, fájlkiterjesztések és társított alkalmazások, automatikusan
+            induló programok, felhasználói profilok, hardverösszetevők, használt portok, ikonok, asztali témák,
+            rendszerstílus, stb..<br>
+            5 részre bomlik fel:<br>
+            Hive:(kaptár), egy kulcs minden alkulcsának és bejegyzésének összesége, struktúrája, gyüjteménye. A registry
+            editor ezt a struktúrát jeleníti meg, a legvégén szereplő kulcs-érték párokkal, amik az OP R tulajdonságait
+            befolyásolja. Az öt szakasz:<br>
+            -HKEY_CLASSES_ROOT : HKCR ->az itt tárolt információk határozzák meg, hogy egy adott kiterjesztésű fájlt
+            mivel nyisson meg a Win<br>
+            -HKEY_CURRENT_USER: HKCU -> a bejelentkezett felhasználó adatait tartalmazza<br>
+            -HKEY_LOCAL_MACHINE: HKLM -> a számítógéppel kapcsolatos összes hardver és szoftver konfigurációs adatokat
+            tartalmazza<br>
+            -HKEY_USERS: HKU -> minden egyes felhasználói profilhoz tartozik egy alkulcs, a HKCU ennek alkulcsa<br>
+            -HKEY_CURRENT_CONFIG: HKCC -> csupán egy link az aktuális hardverprofilra, az aktuális
+            hardverkonfiguráció<br>
+            DLL: /Dynamic Link Library, dinamikus csatolású vagy hivatkozású könyvtár/, az alkalmazásokhoz és az OP
+            Rkhez tartozó kiegészítés. A fájlok tartalmazzák a kódrészleteket, rutinokat, hivatkozásokat, amik magát az
+            alkalmazást építik fel, "az csinál valamit". Vannak tipikus tevékenységek, amiket külön lehet választani az
+            aktuális alkalmazástól, külön fileokba fogjuk őket rakni/"könyvtárakba", ezeket hívuk DLL-nek, amik azokat a
+            fileokat jelentik: amik közismert, többek által ismet rutinokat-eljárásokat tartalmazzák, amit így, ebben a
+            formában közzé teszünk és nem kell mindig egy például fájl megnyitási műveletet nem kell újra és újra
+            lekódolni. Legtöbb esetben azeket a műveleteket a gyártó maga közzéteszi. Így az OP R is kisebb, illetve az
+            alkalmazások is számíthatnak arra, hogy ezeket a rutinokat elérhetik. Az applikációk is gyorsabban és kisebb
+            méretben állíthatóak elő, egységes képet fog mutatni, a "felület" meg fog egyezni. Egy-egy alkalmazáshoz
+            sok-sok ilyen link libraray tartozhat vagy akár az alkalmazás hozhatja magáva a saját DLL-jét.<br>
+            Felhasználói könyvtár: A fenti tartalmak különböző könyvtárakban kellene elhelyezni. Ezek a filerendszerek
+            sajátossága, hogy a fileokat, és a valamilyen vezérlő elv szerint csoportosított filejainkat pedig
+            könyvtárakba tudjuk rendezni. És ezekből komplett file struktúrákat tudunk kialakítani. A több felhasználós
+            OP Rkben eleve megtalálható az a rendszer, hogy a felhasználók könyvtárstruktúrája hogy fog felépülni, pl.:
+            c:\Users. Amiben minden felhasználónak a saját mappastruktúráját el fogjuk helyezni. A felhasználókhoz külön
+            beállítások is tartoznak, maga a felhasználói profil, aminek az egyik fontos része a könyvtárstruktúra,
+            amikbe kerülnek be a személyes beállítások is.
+        </p>
+
+
+        <h4 id="2/4">Batch programozás <a href="#nav">Vissza a tartalomjegyzékhez</a></h4>
+        <p>Parancssor: A fent említettekből kiderül, hogy egy OP Rnek bizonyos funkciókat tartalmaznia kell, hogy
+            használatuk kézenfekfő legyen. Ami ugye leget grafikus vagy a "parancssor". A korai OP Rkben csak
+            karakteresen lehetett bármit is csinálni. És ez valószínűleg a jövőben is így lesz, a grafikus felület sokat
+            fogyaszt, így célratörőbb a parancssor, hiába nem nyújtja azt az "élményt".<br>
+            Windowsban a cmd.exe, ami a rendszerkönyvtárban található meg. %Systemroot% | System32 . Különböző jogokkal
+            lehet elindítani.<br>
+            Vannak specifikus esetek, amikor nincs grafikus felület vagy a parancssor előnyeit szeretnénk kihasználni.
+            Jellegzetes eleme a 'prompt', ">". Ami további infót is trtalmazhat, dátum, könyvtár, illetve villogásával
+            az interaktív módot jelzi. Win belül az ablak címsorán is láthatunk infókat, hogy mi fut, milyen
+            hozzáférésünk van vagy akár testre is szabhatjuk a jobb gombos címsorra kattintva, betűtípus, szin,
+            stb..<br>
+            Alapok: ALT + ENTER:teljes képernyő, TAB:automatikus file/mappanév kiegészítés, RIGHT CLICK:beillesztés,
+            ARROW UP:előző parancs, ARROW DOWN:következő parancs, CRTL + C:parancs megszakítása, SELECT RIGHT CLICK:a
+            kijelölt rész beillesztése a prompt után, F7:parancselőzmények.<br>
+            Parancsok formátuma: parancsnév[kapcsolók][paraméterek]. Pl.: copy /y file1 file2. Ahol a "copy" a
+            parancsnév, a "/y" a kapcsoló és a "file1, file2" a paraméterek. A kapcsolókkal az alapértelmezett
+            műveletet(szabályait) tudjuk befojásolni, a paraméterek pedig az elérési útvonalak és hasonló tulajdonságok
+            megadására szolgálnak.<br>
+            Súgó és kilépés: 'help' - az összes belső parancs kilistázása. help "command" vagy command /? <- a súgó
+                megjelenítése az adott parancsról/commandról. Exit - kilépés.<br>
+                Alapparancsok - cd: <br>
+                cd / chdir - aktuális útvonal kiíratása, cd.. - egy mappával feljebb lépés, cd\ - kilépés a gyökér
+                könyvtárba, cd 'path' - ugrás az adott elérési útvonalra(cd c:\ez\az\amaz), d: - váltás a 'd'
+                lemezre.<br>
+                Mappaműveletek: dir - könyvtár tartalmának kilistázása, md/mkdir - könyvtár létrehozása, rd/rmdir -
+                könyvtár törlése.<br>
+                Fájlműveletek: copy - fájlok másolása, copy con(con a console, a billentyűzet) - fájl létrehozása, type
+                - file tartalmának kiíratása.<br>
+                Egyéb műveletek: move - file/könyvtár mozgatása(másolás és az eredeti tartalom törlése), xcopy -
+                file/könyvtár másolása, /e vagy /s kapcsolóval, robocopy - nagy teljesítményű másolás, akár egész
+                meghajtó, ren/rename - fileok/könyvtárak átnevezése, del fileok/könyvtárak törlése.<br>
+
+                Helyettesítő karakterek: -white char karakterek -, leginkább a fileműveleteknél, amikor több állománnyal
+                szeretnék valamit csinálni, amelyek valamilyen tulajdonságuk alapján egy csoportot képeznek, egy
+                mappában vannak, azonos kiterjesztés, stb.. Azonosításra, fájlműveletek végrehajtására, leválasztására
+                dinamikusan használhatjuk ezeket a white char karaktereket.<br>
+                -? - dir email.htm? - Egy karakter, bármilyen karakter.<br>
+                -* - tetszőleges számú karakter behelyettesítésére szolgál.<br>
+                Parancssor helyettesítő karakterek, "átirányítási" karakter. '>'. Használhatunk egyet vagy kettőt
+                belőlük, a végeredmény hasonló egy minimális különbséggel. dir > list.txt = a parancs kimenetelének a
+                fájlba írása. Ez felülírja a már megévő filet!!! Vagy dir >>(append) list.txt, a parancs kimenetének
+                tartalmát hozzáfűzi a filehoz.
+        </p>
+
+        <p>Futtatható állományok kezelése: Az OP Rnek fontos a futtatható állományok kezelése, kellenek az "API"-k, hogy
+            futtatni tudjunk külső alkalmazásokat is. Illetve azok, amik az OP R telepítésekor kapunk. Az OP Rek
+            támogatják a korábbi verziókat, így azok elődein futtatható programokat is - ha nem is mindegyiket, de
+            legalább a legelterjedtebbeket.<br>
+            .COM: az angol command szóból ered, bináris file. Ezek a fileok voltak a DOS első futtatható állományai,
+            egyszerű felépítésűek, max 64KB méret. Kísérő infó nincs bennük, csak a programszegmenst tartalmazza. Nem
+            lesz teljesen adoptálható egy akkori rendszeren megírt kód, leginkább emulátoron futtatják.<br>
+            EXE: executable, szintén bináris, magas szintű programnyelven írták, majd gépi kóddá fordították őket. Az
+            elején található egy fejléc egy információs tömb, amely elengedhetetlen a program elindításához, pl.: a
+            milyen DLL-t használ.<br>
+            BAT: kötegelt(batch) állomány, egyszerűen szerkeszthető, CLI(Command Line Interface) parancsokat tartalmaz,
+            melyek egymás után hajtódnak végre. Többször használatos, hosszabb uatasítások ismételt begépelésétől
+            megkímélhetjük magunkat. Ma már leginkább a PowerShell Script van helyette, igazából ellől nőtte ki magát.
+            Sok előnye van, bárki írhatja, kis helyet foglal, könnyű ütemezni, időzeteni őket.<br>
+            CMD: Szinte ugayan az, mint a .BAT, bár itt azért már több ezer "parancs"/commandlet használata is
+            lehetséges. A CMD kiterjesztés a 32 bites rendszerektől használatos a Win-zal. Nagy eltérés, hogy a .cmd
+            file az ERRORLABEL értékét sikeres futtatás esetén is meg tudja változtatni, míg a .bat csak hiba esetén.
+        </p>
+
+        <p>Batch programozás:<br>
+            ECHO: Stringeket kehet kiíratni vele<br>
+            Karakterkészletek: régen 8bit, most már 16 is. 65001 unicode, nemzetközi szabvány. Megváltoztatása "chcp"
+            change code page.<br>
+            @echo off - már maga ez az utasítás sem fog megjelenni.<br>
+            Vannak változók, értékeket adhatunk, futás közben változtathatunk. Helyi változók, csak az adott programban,
+            munkaablakban. Környezeti - globáli, maradandók. A változóknak nevet kell adnunk, '%' jellel hivatkozunk
+            rájuk, nem CaseSensitive. betűk, számok és néhány spec.karakter.<br>
+            set variableName = value .<br>
+            /a kifejezés az értékadásban : set /a myOtherNumber=1+2<br>
+            /p felhasználótól bekért adat set /p yourName=add meg a neved:<br>
+            rem - megjegyzés, ami echo on mellett megjelenik. (remark)<br>
+            :: - megjegyzés, echo on mellett sem jelenik megadására<br>
+            Paraméterek: %0, %1, %2... A %0 - mindig a file nevét fogja visszaadni a többi %szám pedig a megadott
+            paramétereket a feldolgozás során.<br>
+            <br>
+            par.bat<br>
+            @echo off<br>
+            echo %1<br>
+            <br>
+            par - nincs megadva paraméter, nem ír ki semmit<br>
+            par value - kiírja: value<br>
+            par "par val" - kiírja: "par val"<br>
+            <br><br>
+            par2.bat<br>
+            @echo off<br>
+            echo %~1 - Ha nem szeretnénk, hogy a megadott idézőjelek is a megadott paraméter részei legyenek, akkor így
+            tudjuk kikapcsolni.<br>
+            <br><br>
+            par3.bat<br>
+            @echo off<br>
+            set parameter = %~1<br>
+            echo %parameter%<br>
+            <br><br>
+            ifelse.bat - ez, már "haladó" műveletet, feltétel vizsgálatot is tartalmaz.<br>
+            @echo off<br>
+            chcp65001<br>
+            if "%1"==""(<br>
+            echo Nincs megadva paraméter<br>
+            ) else (<br>
+            echo A praméter értéke: %1<br>
+            )<br>
+            <br><br>
+            "%1" == "" vagy [%1]==[] vagy [%1]EQU[]<br>
+            <br><br>
+            Programok speciális indítása: START "title" [/D path][options] "command"[parameters]<br>
+            start "Ablak neve" /min %windir%\system32\cmd.exe<br>
+            start "" /max "c:\ProgramFiles\totoalcmd\TOTALCMD64.EXE"<br>
+            <br><br>
+            Környezeti változók: OP rendszeré, felhasználóké, stb. Pl.: PATH-elérési útvonal, SYSTEMDRIVE-tartalmazza a
+            meghajtót, amelyen a Win is van, USERNAME-aktuális felhasználó, TEMP és TMP-ideiglenes könyvtár elérési
+            útja, WINDIR-a könyvtár,amibe a Win települt, USERPROFILE-aktuális felhasználó saját könyvtárának elérési
+            útja.<br>
+            Parancssorból:<br>
+            set valami = valamivel, csak az ablakban<br>
+            setx : globális.
+        </p>
+        <a href="#nav">Vissza a tartalomjegyzékhez</a>
+    </div>
+    <hr>
+
+    <div id="3">
+        <h3>Hálózatokról - Gyártófüggetlen <a href="#nav">Vissza a tartalomjegyzékhez</a></h3>
+        <h4 id="3/1">Hálózati alapismeretek</h4>
+        <p>A fogalma, célja:<br>
+            Egymással kapcsolatban lévő önálló számítógépek hálózata, amit úgy is érthetünk, hogy autonóm(saját
+            jogkörrel rendelkező, mástól függetlenül jogosult döntéseket hozni, feladatot, szerepet ellátni)
+            számítógépek összekapcsolt rendszere.<br>
+            Elsődleges célja az erőforrások megosztása. Amelyek különböző végpontokon jelennek meg és maga a hálózat
+            biztosítja az áthárhatóságot, illetve az információ áramlást.<br>
+            Végpontok lehetnek eszközök, emberek, amelyek különböző távolságban helyezkednek el egymástól, éppen ezért
+            különböző mértű hálózatokat különböztetünk meg. Lehet szó kicsi, helyi hálózatról vagy akár nagy kiterjedésű
+            hálózatokról, amelyek a világ bármely pontját összekapcsolhatja. Internet: a hálózatok hálózata.<br>
+            A végpontok rendelkezhetnek különböző olyan tartalmakkal, alkalmazásokkal, adatokkal, kapacitásokkal,
+            számítási teljesítménnyel vagy háttér tár kapacitással, különleges perifériákkal(eszközökkel), amelyek mások
+            számára érdekesek lehetnek. A hálózat az átjárhatóságot, illetve ezeknek a perifériáknak az elérhetőségét
+            biztosítja.<br>
+            A hálózatok egyfajta biztonságot is jelenthetnek, ha például különböző adatokat több helyen is tárolhatunk,
+            ha valamelyike elem kiesik a hálózatból, az említett adatok továbbra is elérhetőek, a szolgáltatások
+            továbbra is fenntarthatók.<br>
+            Kisebb hálózatok kiépítésével, kedvezőbb költség kihasználást a hálózat kiépítésével, kisebb és olcsóbb
+            elemekből tudunk nagyobb biztonságú rendszereket kiépíteni, mint ha egy nagy drága végpontot/szolgáltatást
+            akalítanánk ki. Ez esetén ha a végpont meghibásodik, az egész szolgátatás megáll. Több kisebb esetén, még ha
+            egy ki is esik, a hálózat és a szolgáltatások működhetnek.<br>
+            Skálázhatóság: Ha egy szolgáltatásomnak folyamatosnak és folyamatosan terhelhetőnek kell legyen a megfelelő
+            minőségben, akkor ennek akkor is működnie kell, ha ennek a szolgáltatásnak az igénybe vevőinek a száma nő. A
+            skálázható rendszer képes a növekvő igényekre is válaszolni, új elemek csatlakoztathatóak, nem fog elfogyni
+            az erőforrás, a kiszolgálás határai növelhetőek.<br>
+            Kommunikáció: Fontos tulajdonsága a hálózatoknak, ez a folyamat az egyik alapeleme annak, hogy a végpontok
+            közötti erőforrasokat fel tudjuk használni.
+        </p>
+
+        <p>Öszetevői:<br>
+            A hálózatok többféle elemekből állnak, leginkább a végpontok összekötése a cél, akik fogyasztják és
+            megvalósítják a hálózat egy szolgáltatását. Hostok(állomások), Megosztott perifériák(megosztani kívánt),
+            Hálózati eszközök- akik a kommunikációt megvalósítják(kapcsolók, útválasztók, egyéb aktív elemek a hálózaton
+            belül), Hálózati átviteli közeg(amin keresztűl a kommunikáció áramlik)<br>
+            Állomás:Minden számytógép amely csatlakozik a hálózathoz és közvetlenül részt vesz a kommunikációban.<br>
+            Megosztott perifériák: nem közvetlenül, hanem az állomásokon keresztűl kapcsolódnak a hálózathoz, amik majd
+            kezelik a hozzáféréseket is.<br>
+            Hálózati készülékek, Hálózati átviteli közegek:az állomások összekapcsolásra használják ezeket.
+        </p>
+
+        <p>Egyenrangú hálózatok, Peer-to-peer:<br>
+            Olyan hálózat, ahol a végpontok hasonló adottságokkal rendelkeznek, akár erőforrás, akár szerepkör. Ezekben
+            a hálózatokban egy végpont lehet kiszoláló vagy ügyfél is lehet egyszerre. a kliens-server megelőző
+            megoldása volt. A peer a végpont a hálózaton, host vagy állomás. Olcsóbb mint a szerver-kliens. Széles
+            körben elterjet.<br>
+            Nincs dedikált kiszoldáló, nincs központi vezérlő, adatbázis. Senkinek sincs globális képe a hálózatról.<br>
+            Bármilyen megosztott erőforrás elérhető bárki által. Akkor férhetsz mások erőforrásaihoz, ha megosztod a
+            sajátjaidat. A peer-ek függetlenek egymástól, nincs regisztrálva, hogy ki lehet a hálózat tagja, akinek van
+            hálózati hozzáférése, lehet egy laza tagja ennek a csoportnak. A peer-ek és kapcsolatok alapvetően
+            megbízhatatlanok(gyakori ki- és belépés).<br>
+            A hitelesítés fontos, mert ugye nincs megszabva, hogy ki mit csinálhat a hálózaton, ezért kell az
+            ellenörzés, hogy kinek milyen engedélye van.Ezt minden erőforrás megosztásánál külön-külön el kell
+            végezni(mert ugye nincs egy központi szerver, ahol egyszerre be lenne állítva a felhasználók jugosultságai).
+            Minnél több tagja van egy peer-to-peer hálózatnak, annál több hitelesítés szakítja meg a munkamenetet.
+            Előnyei: könnyen konfigurálható, egyszerű-nem összetett, alacson költségű, egyszerű feladatok ellátására
+            tökéletes. Hátrány: nincs központosított adminsztráció, nem biztonságos, csökkenhet a teljesítmény.
+        </p>
+
+        <p>Kliens-Szerver modell:<br>
+            A hálózatokban működő alkalmazások legtöbbje az "ügyfél-kiszolgáló" alkalmazások közé tartozik. A hálózaton
+            mind a két fél végpontnak minősül, de logikai szempontból az egyik kapni, a másik adni szeretne.<br>
+            FTP, böngészők, levelezőprogramok - általlános célúak, vagy akár speciális is lehet, ami csak egy bizonyos
+            szerverhez kapcsolódva tud bizonyos feladatokat ellátni.<br>
+            Az ügyfél oldali komponens, ami kisebb súlyú és nem fogja tartalmazni a nagy erőforrás igényű komponenseket,
+            amiket majd a szerver oldalon fogunk futtatni, és a kiszolgáló oldali komponens, a kritikus részét itt
+            futtatom a programnak, mert: erösebb hardverek, folyamatosan a hálózaton van, stb.<br>
+            Hálózati kommunikáció: Feltételezzük, hogy a szerver folyamatosan működik és várja a kliens kérést REQUEST,
+            a szerver ezt elvégzi és egy választ fog küldeni REPLY/RESPONSE, amit a kliens felhasznál.<br>
+            A klien oldalon egy ügyfél kérést állítunk elő, amire kön a válasz, és így tovább.. A kliens tartalmazhatja
+            az elérést vagy akár mi adhatjuk meg, pl URL- Uniform Resource Lokator. A kiszolgáló a válasz után azonnal
+            bontja a kapcsolatot. FTP és SSH során a kommunikáció végéig tart a kapcsolat.
+        </p>
+
+        <p>Hálózatok kiterjedése:<br>
+            A hálózatokat küönböző szempontok szerint tudjuk csoportosítani, tulajdonságokkal ellátni. A hálózatok
+            mérete alapján való csoportosítás a leg hétköznapibb, egy adott hálózat két legtávolabbi végpontjai közötti
+            távolságot nézve. Fontos, hogy a méretük miatt, másképp működnek.<br>
+            LAN - Local Area Network. Talán a legelterjedtebb. Kis méret, amikor a közeg, a végpontok mind az én
+            felügyeletem alatt állnak - nincs külső provider/szolgáltató a végpontjaim között.<br>
+            MAN - Metropolitan Area Network. Pl. városon belül a raktár és iroda között, ami mind a kettő lehet egy LAN,
+            kell egy összeköttetés, amit egy gerinc hálózaton valósítok meg.<br>
+            WAN - Wide Area Network. Nagy skálán mozog, néhány km-től akár globális kiterjedésig mehet(meg az űrbe
+            is..).
+        </p>
+
+        <p>Small Office Hálózat(SOHO) - kisméretű otthoni vagy irodai hálózat, erőforrások megosztása, egy kapcsolat az
+            internet felé.
+        </p>
+
+        <p>LAN:<br>
+            Földrajzilag korlátozott terület, nagy sávszélességű átviteli közeget használ. Permanens jelleggel -
+            állandóan, non-stop hozzáférést biztosít az erőforrásokhoz. A helyi rendszergazda végzi a felügyeletét.
+            Fizikailag közel elhelyezkedő eszközöket köt össze.<br>
+            MAN:<br>
+            Lokális hálózatok nagyobb változata, hasonló technológiára épül. Számukra kidolgoztak egy külön szabványt,
+            ezért soroljuk külön. Ez a szabvány a DQDB - Distributed Queue Dual Bus.<br>
+            WAN:<br>
+            Minden ami nem tartozik bele a MAN-be, vagy mert nagyobb vagy mert más technológiát használ, a WAN-be
+            tartozik. Nagy földrajzi területeket fed le, a hozzáférés viszonylag lassú, ugye itt már egy provider
+            hálózatán kereszűl valósúl meg. Lehet non-stop vagy időszakos csatlakozás.<br>
+            Ezeknek a hálózatoknak is a részei a Hostok. AZ ezeket összekapcsoló kommunikációs alhálózat - COMMUNICATION
+            SUBNET -, röviden alhálózat. Ennek a feladata az üzenetek továbbítása a hostok között. Az alhálózat részei
+            az átviteli vonalak(áramkörök, csatornák, trönkök) és a kapcsolóelemek -> olyan speciális számítógépek,
+            amelyeket két vagy több átviteli vonal összekapcsolására használnak.
+        </p>
+
+        <p>Hálózati topológiák:<br>
+            -a topológia egy adott hálózat pontjai közötti kapcsolatokat határozza meg. Fontos része a hálózat
+            dokumentálásának, olyan, mint egy térkép. Tervezésnél és karbantartásnál is nagy segítég a hálózat
+            átláthatósága. A hálózat növekedésével így egyszerűbb a hibaelhárítás, tudjuk, hogy mit hol kell keresni.
+            Akár wifi akár kézzel fogható hálózatok között. Vannak tipikus topológiák, ugyan azok a hálózati elemek,
+            típusok, protokollok, technológiák. A hibrig megoldások a leg rugalmasabbak és hibatűrőek. Két képpen
+            ábrázoljuk: fizikai és logikai.<br>
+            Fizikai: a tényleges hálózat, a konkét térkép, amin szerepelnek a hálózat összetevői, akonkrét hálózati
+            kép.<br>
+            Logikai: azt mutatja meg, hogy hogyan használom valójában a fizikai hálózatot. Ma már nem kell teljesen
+            fedésben lennie a kettőnek, bár kisebb hálózatoknál elképzelhető. Mondhatjuk azt is, hogy a logikai
+            topologia tükrözi a valós felhasználást a fizikai hálózatnak.
+        </p>
+
+        <p>
+            <img src="" alt="">
+            A tapasztalatok alapján igyekeznek a jól működő rendszereket előtérbe helyezni.<br>
+            Bus - talán a legrégebbi. Olcsó egyszerű hétköznapi. Gerinchálózat<br>
+            Ring - Hasonló, önmagába csatolva.<br>
+            Star - központi elem és arra a végpontok.<br>
+            Mehs, Fully Connected.<br>
+            Tree - inkább logikai/elméleti.<br>
+        </p>
+
+        <p>Protokoll, Kommunikáció:<br>
+            A végpontok közötti kommunikációhoz szügség van egy közös nyelvre, amit mindenki megért. Szabályokra és
+            megállapodásokra vagyis protokollokka. Egyfajta leirat, arra nézve, hogy hogyan kell formázni bizonyos
+            adatokat, milyen sorrendben, milyen időzítéssel, milyen kódolással kell azt elkészíteni, eljuttatni a
+            címzett elemhez, hogy azt értelmezni tudja.<br>
+            Definiálják az üzenetküldés és szállítás részleteit: Üzenetformátum, Üzenetméret, Időzítés, Beágyazás(példa
+            erre a postai levélküldés, ahol ugye nem csak az üzenet megy el, hanem a boríték, a pecsét, a bélyeg, ami a
+            küldésnél is fontos, egyébként nem), Kódolás, Szabványos üzenet minta.<br>
+            Segítségükkel kb. egységes méretű darabok vannak elküldve, nem tartja fel a forgalmat a nagyobb fájlok
+            küldése pl. <br>
+            Üzenetkódolás: küldő állomás bitekké konvertálja. minden bitet hang, fény vagy elektromos impulzussá kódol,
+            a hálózati közeg függvényében. A célállomás fogadja és az értelmezéshez dekódolja a jeleket.
+        </p>
+
+        <p>
+            Üzenetformázás:
+            <img src="" alt="">
+
+
+            Maga az üzenet ellenörző kódokat, ellenörző összeget is tartalmazhat, pl.: hol tart a folyamat, nem
+            sérült-e, stb..<br>
+            Minden elemen, amin keresztűl megy az üzenetem, jogosult megnézni, hogy az egyben van e, nem sérült.<br>
+            A küldő generál egy "összeget" az eredeti üzenetről, amit a legvégén elküld és a fogadó összehasonlítja ezt
+            az összeget a reprogukált üzenetről generált összeggel és ha egyeznek, akkor kijelenthető, hogy a kettő
+            megegyezik.<br>
+            <br>
+            Időzítés: Hozzáférési mód: meghatározza, hogy mikor küldhet üzenetet. Adatfolyam vezérlés(FlowControl):
+            mennyi információt és milyen gyorsan lehet küldeni(egyfajta áteresztő képessége egy csatornának, vagyis a
+            sávszélesség). Válaszidő túllépése: ha nem jön válasz X időn belül, feltételezi, hogy már nem is fog és így
+            reagál.
+        </p>
+
+        <p>Üzenet sémák:<br>
+            arra vannak kitalálva, hogy kiket szeretnénk a hálózaton elérni.<br>
+            Unicast: egy-az-egyhez, csak egy címzett van, pontos feladó, pontos címzett.<br>
+            Multicast: csoportos, több címzett(one to many vagy many to many).<br>
+            Anycast: csoportos küldés, de ha az egyik meggkapja, atöbbihez már nem jut el. Azonos tulajdonságokkal
+            rendelkező csoportból csak egy tagjával szeretnék kommunikálni.<br>
+            Broadcast: a hálózaton egyidőben az összes állomásnak meg kell kapnia az üzenetet. Szórás/elárasztás -
+            feltétel nélküli. Amikor tudom, hogy mit akarok, csak nem tudom, hogy ki az aki azzal a
+            tulajdonsággal/erőforrással rendelkezik.
+        </p>
+
+        <p>Az Ethernet:<br>
+            A vezetékes helyi hálózatban a leggyakrabban használt protokollkészlet. A legszéleskörűbb kompatibilitást
+            nyújtó megoldás.<br>
+            Meghatározza az üzenet formátumát, méretét, időzítését, a kódolást és a sémákat. Változó méretű, de tól ig.
+            Encapszulált tartalom, beágyazott,<br>
+            A kereteket Protokoll Adat Egységeknek - PDUs, Protocol Data Units) - nevezik. Az ethernet frameing egy
+            nyílt szabványú megoldás.<br>
+            <br>
+            Ethernet hálózatok hierarchikus felépítése: 3 alaprétege van: Hozzáférési réteg(ACCESS LAYER) - a helyi
+            Ethernet hálózaton az állomásoknak biztosít kapcsolódást - hozzáférési felületet. Elosztási
+            réteg(DISTRIBUTION LAYER) - kisebb helyi hálózatokat kapcsol össze. Központi réteg(CORE LAYER-gerinc) - nagy
+            sebességű kapcsolatot teremt az elosztási réteg eszközei között.<br>
+            Hálózati elemek: Switch-access layer és Router-distribution layer, core layerben meg vegyesen, ott a
+            teljesítmény számít.
+        </p>
+
+        <p>Internet:<br>
+            Számítógépes hálózatok világméretű összessége, melyeket az információk cseréjéhez egységes szabványokat
+            használva, együttműködnek egymással.
+        </p>
+
+        <p>ISP - INTERNET SERVICE PROVIDER:<br>
+            Ha a netre szeretnénk csatlakozni, ezen keresztűl tudunk. Ezek vállalatok, akik kapcsolatot és támogatást
+            biztosítanak az internet eléréséhez, elektonikus levelezést vagy webes tárhelyszolgáltatást is. Méretük
+            széles skálán mozoghat.
+        </p>
+
+        <p>TCP/IP:<br>
+            A leggyakrabban használt hálózati protokoll. Több protokoll együttműködésének köszönhetően valósul meg
+            egyfajta kompatibilitás. A TCP/IP leginkább logikai hálózatokhoz tartozó kommunikációs megoldás.
+            Gyakorlatilag egyeduralkodó a kommunikációban. Történelmi oka is van, hogy hogy alakultak a tudatos/nem
+            tudatos döntések, illetve az internet is TCP/IP alapú komm. Amikor egy végpontról beszélünk, hogy az ismer
+            egy "nyelvet", az tulajdonképpen nem "egy nyelv" hanem együttműködő protokollok összessége. Az egyik címez,
+            a másik darabol, stb.. Tehát a TCP/IP protokol az egy gyüjtemény - SUIT - sok kisebb komponensből áll össze,
+            együtt teszik meg a feladatukat. Nevét a két fő protokollról kapta, amik mellett ugye sok más is van benne.
+            Jelenleg két verzió a leggyakoribb, az IPv4 és az IPv6, 4 a leggyakoribb, de a mai OP Rk már a 6ost is
+            ismerik. Rugalmassága miatt könnyedén működhet Internet méretű hálózatban is. Lehetővé teszi, hogy
+            alhálózatokat(számítógépes csoportokat) tudjak címezni, illetve, hogy adott csoporton belül melyik
+            számítógépről/végpontról/hosztról/állomásról van szó. 32bites azonosítást képes elvégezni. USA védelmi
+            minisztériuma definiált, olyan rendszert akartak kitalálni, hogy atomháború esetén is működőképes
+            maradhasson.
+        </p>
+
+        <p>
+            TCP/IP hálózati architektúra:
+            <img src="" alt="">
+            Követítő közeg kell a végpontok kommunikációjához, ez a LINK LAYER, ez az Ethernet protokoll vadászterülete.
+            Van egy adat méret határ, amit ő még képes elszállítani. TCP/IP figyelembe veszi, hogy az Ethernet mennyit
+            bír, annál nagyobbat a TCP/IP sem állíthat elő. Tehát a LINK LAYER határozza meg, hogy hogy kommunikál
+            egymással két végpont.<br>
+            A NETWORK LAYER, ez a TCP/IP felségterülete. Meg kell határoznia, hogy hogy azonosítsa a résztvevőket a
+            hálózatban - egyedi azonosító. Tehát a hálózati réteg feladata a címzés, a címek azonosítása és
+            feldolgozása(sikeres, sikertelen, IP címek kezelése).<br>
+            TRANSPORT LAYER, feladata a darabolás, sorszámozás, sorbaállítás<br>
+            APPLICATION LAYER, állítja elő az adatot, amit el kell küldeni<br>
+            Rétegszerkezet - Moduláris tevékenység<br>
+        </p>
+
+        <p>TCP/IP protokoll csomag:<br>
+            <img src="" alt="">
+            Az alkalmazások elküldendő adatai a TCP/IP porotokoll során sok segítséget kapnak, különböző atalakuláson
+            mennek át ahhoz, hogy egy hálókátyáról a különbözö közvetítő közegeken keresztűl eljussanak egy végpontba.
+            Menet közben sok azonosítás kell(küldő, címzett), fizikai azonosítókat is használunk MAC addres. Tehát egy
+            rétegszerkezeten keresztűl dolgozzuk fel az alkalmazások adatait:<br>
+            Hálózati réteg: csomagok tényleges elszállítása a feladótól a címzettekig. Itt a hálózat hardveres
+            megvalósításához kötődő potokollokat használjuk. Itt fogjuk a MAC addresseket használni, hogy ugyan azon a
+            fizikai hálozaton lévő interfészeket és operációs rendszereket meg tudjuk különböztetni. Aszállitó közeget
+            kezelni kell, hálókártya.<br>
+            Internet réteg:az IPkkel foglalkozik, itt kap a csomag feladót és címzettet, ez a réteg felelős azért, hogy
+            a csomag tudja, hogy merre kell mennie, amíg célba nem ér.<br>
+            SZállítási réteg: ez a réteg kapja meg az adatokat és állítja össze a csomagokat, darabolja. Ez a
+            TRANSMISSION CONTROL PROTOCOL.<br>
+            Alkalmazás réteg: itt dolgoznak azoka szabványok, melyek konkrétan egy alkalmazásból vagy ba érkező
+            adatfolyamok előfeldolgozásához szügségesek, megjelenítés, kódolás, párbeszédszabályozás(flowcontrol),
+            párhuzamos, időben eltolt,stb, előre megbeszélt mód szerint végrehajtani..<br>
+            <br>
+            TCP & UDP protokollok: Ezek a protokollok a szállítási rétegben helyezkednek el, ahol a szegmensekre bontás
+            is történik. ez mind a két protokollra igaz. <br>
+            A TCP összeköttetés alapú - CONNECTION ORIENTED -, mielött elindul a kommunikáció, kialakítanak egy
+            megbízható csatornát maguknak, meggyőződnek, hogy a fogadó fél az képes-e a fogadásra és bír-e ugyan azzal a
+            protokollal és csak utána indul a kommunikáció, amiek az állapotát folyamatosan figyeli is, sorszámok,
+            illetve, hogy a visszajelzés megérkezett a sorszámhoz. Mindent újraküld amit a vevő nem tudott venni. Ilyen
+            szempontból megbízható és biztonságos.<br>
+            UDP - USER DATAGRAM PROTOCOL: Összeköttetés mentes- CONNECTION LESS- és szoftveresen nem biztosítja a
+            szegmesek megérkezését, nincs sorszám. Valós idejű adatküldésnél előnyös(streaming). Kisebb helyigénnyel tud
+            dolgozni, nagyobb teljesítményre képes. Kisebb a header is, ezért olcsóbb és gyorsabb.
+        </p>
+
+        <p>Portok:<br>
+            Mind a TCP, mind a UDP protokol protszámok, csatlakozószámok-SOCKET NUMBER- segítségével kommunikál a
+            felsőbb rétegekkel. Ezek számszerű azonosítók minden egyes szegmensben, amelyek a kért célszolgáltatások és
+            a párbeszédek nyomon követésére szolgál.Portszámokkal részben azonosíthatókká és részben
+            megkülönböztethetővé teszik a forgalmat, az egy időben történő "beszélgetéseket".<br>
+            A 255 alatti portok a nyilvános alkalmazásokhoz tartalmaznak. 1023ig terjedő portokat a piaci alkalmazásokat
+            fejlesztő cégek haszálhatják. 1023 feletti tartományra nincs szabály.<br>
+            16bites számok, tehát +65k.<br>
+            Clélport: a kliens elhelyez egy portot a szegmensben, pl HTTP:80. Alaphelyzetben a webkiszolgáló a 80 portot
+            hallgatja, így ő fogja a kérést kiszolgálni. Egy szerver párhuzamosan több szolgáltatást is kínálhat, pl
+            HTTP:80 és FTP:21.. <br>
+            Forráspot: véletlenszám szerűen generálja a küldő eszköz, a két pont közötti párbeszéd azonosítására.
+            Párhuzamosan több párbeszéd is folyhat, vagyis egyidőben. Egy ezközön egyszerre több alkalmazás is kérhet
+            HTTP szolgáltatást egy web szervertől. Az elkülönített párbeszédek nyomon követése a forrásportokon
+            alapszik.<br>
+            <br>
+            <img src="" alt="">
+        </p>
+
+        <p>MAC adress:<br>
+            A fizikai végpontok azonosítása egy hálózaton egy fizikai címmel, a MAC - MEDIA ACCESS CONTROL - fog
+            megtörténni. Ez egy hexadecimális számsorozat, a gyártás során minden media egyedi számot kap. A hálózat
+            többi eszköze a MAC címet használja a hálózat előre meghatározott portjainak azonosítására. Hossza 48bit,
+            12Hex számjegy. az első 6 a gyártót, a második pedig az eszközt jelöli. Ezek a ROM ba vannak beleégetve.
+            Maszkolásra van lehetőség "letakarni", megváltoztatni szoftveres formában.<br>
+            Amikor egy forrásállomás küld valamit a hálózaton, az adatban a célállomás MAC címe is szerepel, a hálózati
+            kártyák ellenörzik, hogy a célállomás fizikai címe megegyezik-e az ő címükkel, ha nem, figyelmen kívűl
+            hagyja az adatcsomagot, az megy tovább a következő állomásra.
+        </p>
+
+        <p>IP cím / Logikai cím:<br>
+            Egyedi hálózati azonosító, amelyet az IP segítségével kommunikáló számítógépek egymás azonosítására
+            használnak. Minden, az internetre kapcsolt számítógépnek van IP címe, de egy-egy konkrét cím nem kötödik
+            feltétlenűl egy-egy géphez: egyes gépeknek több címük is lehet, vagy több gép osztozhat egy címen, vagy a
+            gép címe rendszeresen változik - DHCP.<br>
+            A logikai azonosításon felül fizikailaig is azonosítani szeretnénk mindenkit a hálózaton. A fizikai címzés
+            egy egyszerű címzés, semmilyen strutúrát, hálózatosítást, optimalizációt nem tesz lehetővé. Erre tesszük rá
+            a logikai címzésünket, a TCP/IP-t. A logikai címzés sokkal nagyobb teret biztosit, szabadabb. Sok ilyen
+            protokol létezik, bár a TCP/IP a legnagyobb. Ez ha IPv4, akkor 32bit. IPv6 128bit.<br>
+            Vagy egy általam előre meghatározott cím lesz, vagy egy központi mechanizmus segítségével, pl.:dinamikus
+            konfigurációs protokollok által létrehozott. Akinek nincs egy valós IP konfigurációja, nem fog tudni részt
+            venni a hálózaton.<br>
+            Az IP címekkel elvileg be lehet azonosítani a gép helyét és tulajdonosát, személyes adatnak számít.<br>
+            Komplex modell(sok hálózat alkotja az internetet). Az IP nek van egy hálózat azonosító és egy hosztot
+            azonosító része - NETWORK ID, HOST ID - , a szegmes van a bal oldalon és jobbra pedig a host
+            azonosítója.<br>
+            <img src="" alt="">
+            2 * 32 bit, az első 32 az IP, a második a SUBNET MASK - alhálózati azonosíto.<br>
+            <br>
+            Subnet mask: egy speciális tartalmú bináris, 32 bites érték, ahol bináris 1-eseket fogunk írni azokra a
+            pozíciókra, ahol a maskoz tartozó IP cím azonos értékein a hálózat biteit tároljuk és 0-t az állomás
+            azonosítójának, a host bitjeinek a pozíciójára.
+            Már CLASS LESS IP címzést szoktunk használni, nincs A, B és C osztály a subnet maskokhoz, így tetszőleges
+            hálózat és hoszt azonosítóval tudunk dolgozni.
+            <br>
+            A mindenkori legalacsonyabb érték, pl. 22.22.22.0 - magát a hálózatot jelenti és kell egy érték, amivel
+            mindenkit meg tudunk címezni, ez pedig a 255 - broadcast cím. Ezek foglalt címek. És léteznek még további
+            foglalt címek: 127.0.0.1/255.0.0.0 - loopback cím - ezzel azt tesztelem, hogy az adott rendszer amit
+            használok, az megfelelően telepített és konfigurált IP protokollal rendelkezik-e.<br>
+            Subneteléssel felosztható a hálózat alhálózatokra.
+        </p>
+
+        <p>NAT:<br>
+            NETWORK ADRESS TRANSLATION, segítségével egy belső privát hálózat gépeinek IP címeit teljesen lerejthetjük a
+            külső hálózat nyilvánossága elöl. A gépek úgy kerülnek kapcsolatba az INternet publikus hálózatával, hogy
+            egy GATEWAY gépen, a NAToló gépen keresztűl kapcsolódnak. A továbbítás során kicseréli a belső hálózat IP
+            címeit a saját, publikus IP címére. A külső hálózatból érkező válasz üzenetcsomagoknál ennek az ellenkezőjét
+            teszi, visszacseréli a célállomás IP címét a belső hálózati IP címre és a csomagot a belső hálózatra
+            továbbítja.<br>
+            Ez is egy protocol. Magyarok úgy hívják, hogy hálózati címfordítás.<br>
+            Ahhoz, hogy el tudjak érni egy másik hálozatban lévő címet, mindenféleképpen egy routeren(egy irányítón)
+            keresztűl kell mennie a forgalomnak. Úgy is mondhatjuk, ha egy portált akarok elérni egy kis belső
+            hálózatbol, az biztos, hogy ki fog lépni az Internetre, tehát egy jól definiálható ponton, tipikusan egy
+            router, át kell, hogy haladjon. A router végzi a címfordítást, mivel az az a pont a hálózatban, ahol a
+            privát véget ér és kikerül a publikusba. A router, kiveszi a privát forráscímem, kicseréli egy publikus
+            forráscímre és így küldi tovább az adatot. Visszafelé a router kapja meg a csomagot, majd egy
+            nyilvántartásból kiolvassa, hogy kinek kell megkapnia azt a csomagot és ez alapján továbbítja. /Egyidőben
+            akárhány kapcsolat mehet a GATEWAY-en keresztül/ Gyakorlatilag minden hálózatban van ilyen és nagyon jól
+            tudnak működni. Előnye: hogy egy IP cím mögé egy -akár - komplett teljes belső hálózatot is el tudjak
+            takarni, így akár 10ezres nagyságrendű komm. csatornát is ki tudunk nyitni egyszerre. Ez nem változtat az
+            eddig megbeszélteken, hanem ez egy extra szolgáltatás, ami történelmileg alakult így..
+        </p>
+
+        <p>DNS:<br>
+            A tartomány olyan számítógépek csoportja, amelyek földrajzi helyük vagy üzleti funkciójuk szerint
+            összetartoznak. DOMAIN NAME SYSTEM - tartomány név rendszer, ami egy név feloldási szolgáltatás, hogy ne
+            kelljen az IP címeket megtanulni.. A DNS egy alapértelmezett szolgáltatás minden hálózatban.
+            Nagyvállalatoknál pedig a belső futó szolgáltatásokhoz is tartoznia kell egy belső DNS rendszernek. Léteznek
+            privát és publikus DNS redszerek, de végfelhasználóként inkább a publikus az elterjedtebb. A DNS mint egy
+            adatbázis, amit publikusan elérhetővé kell tenni. Az adatbázis sem túl bonyolult, gyakorlatilag név és cím
+            értékpárok. Hívjuk úgy őket, hogy record, mint ahogy ezeket egy adatbázis esetén ezeket hívni szokták,
+            speciálisan ezeket a DNS-nél RESOURCE - erőforrás reckordsnak szokták hívni. Ami egy nevet és egy címet
+            tartalmaz. A megadott címet egy DNS szerveren keresztűl megkerdez, hogy mi az IP cím. Ez lenne a "név
+            feloldás".. TLD = TOP LEVEL DOMAIN, .edu, .com, .gov, .org, stb.. Vagy egyéb "névterek" = .hu, .uk, stb..
+            Publikus szerverek vannak, hogy bárki meg tudja nézni, hogy melyik névre milyen IP cím van nyilvántartva,
+            mivel nyílt és publikus a komm. Ezekből következik, hogy a DNS egyrészt egy adatbázis, amit egy szerveren
+            tárolunk, ez hierarchikusan rendezett DNS-kiszolgálókból áll.
+        </p>
+
+        <p>SSL/TLS:<br>
+            A TCP/IP kommunikáció során többféle feladattal/probémával is szembesülünk. A TCP/IPv4 protocol
+            alapértelmezettként semmilyen biztonsági megoldást nem tartalmaz, ez nem minősül hibának, nem volt cél,
+            amikor fejlesztették.<br>
+            Amikor egymástól távoli pontok kezdenek el komm. egymással, akikről nem feltételezzük, hogy tudják
+            azonosítani a másikat, nincs lehetőség, hogy meg tudjak győződni arról, hogy meg tudjak győződni arról, hogy
+            valóban azzal a végponttal komm. akinek ő kiadja magát és hogy más nem fog hozzáférni az általunk
+            forgalmazott adatokhoz, mert a protocol nem ad erre lehetőséget, nem is igéri meg. Ez az "AUTHENTICATION",
+            autentikáció. Ez is jelentős múltra tekint vissza, a 'hitelesítés', a komm.ban résztvevő pertnerek, mielőtt
+            elkezdenek adatokat forgalmazni egymás között, hitelesítik egymást. Ez csak az elő lépés, hiszen ez után a
+            forgalmazott adatokat is titkosítani kell, főleg a Neten, ahol az átviteli közegre nincs hatásunk. Az IP
+            csomag nem titkosított, nincs mechanizmus, hogy a benne lévő adatokat védje. Zezekre is megjelentek
+            szabványok:<br>
+            TLS - TRANSPORT LAYER SECURITY<br>
+            SSL - SECURE SOCKETS LAYER(ez létezett előbb)<br>
+            Mind a kettő titkosított protocol. Interneten keresztüli komm.hoz biztosítanak védelmet, TCP/IP hálózatokon,
+            tehát plusz kompatibilitás szügséges, mert a titkosítási protocolként is jelen kell lenniük. Népszerűek és
+            egyszerűek, nagyon sok helyre be vannak építve. Ha ezt egy HTTP-n keresztűl szeretnénk, csak HTTPS-t kell
+            használnunk..<br>
+            Handshake: a kliens-server kapcsolódás ezen a folyamaton keresztűl történik, a K és S bizonyos paraméterek
+            összehangolásával biztonságos kapcsolatot tud létesíteni.
+        </p>
+
+        <h4 id="3/2">Hálózati eszközök <a href="#nav">Vissza a tartalomjegyzékhez</a></h4>
+        <p>Háló Kártya:<br>
+            NIC, NETWORK INTERFACE CARD - buszokon kerestűl csatlakoznak, feladatuk a hálózati közeg és a számítógép
+            összekapcsolása. Első rétegbeli(fizikai) eszközök, MAC/közegelérési azonosítóval.
+        </p>
+
+        <p>Repeater:<br>
+            Jelismétlő. Nagy távolságok esetén erősíteni kell a jelet. Feladata a hálózati jelek bit szintű erősítése és
+            újbóli időzítése. Atkív elem, hálózati forgalom továbbításában, optimalizálásában játszanak szerepet.
+            Lehetnek kétportosak, modulárisan bővíthetők vagy többportosak. HUB = multiport repeater(többportos
+            ismétlő). Első réteg beli eszköz.
+        </p>
+
+        <p>HUB<br>
+            Távolságok illetve gépek közötti átjárhatóságot biztosított. Ezt sem használják ma már.. Passzív eszköz,
+            válogatás nélkül mindent továbbít - nem biztonságos.
+        </p>
+
+        <p>Bridge<br>
+            Forgalom optimális továbbítása a LANon, vizsgálja, hogy az adat sérült-e, így javítva a sávszélesség
+            kihasználtságát. Az egyedi MAC címek alapján dönti el, hogy továbbítja-e az adatot vagy sem. Már a második
+            rétegben dolgozik, itt már van egy adatkeret. Leginkább szoftveres úton hoztak létre ilyeneket.
+        </p>
+
+        <p>Switch<br>
+            A mai modern hálózatok egy alapvető része. HUB-ként biztosít kapcsolatot és BRIDGE-ként szabályozza a
+            forgalmat minden portján.<br>
+            MAC adress tábát vezet, hogy melyik prtján melyik ezkösz szerepel és ez alapján dönt a kapcsolás irányáról.
+        </p>
+
+        <p>Router<br>
+            Mivel a hálózatok nagy részében TCP/IP protocolt használunk vagy ennek megfelelőt, ezért kell olyan forgalom
+            irányító, aki ezt érti, a logikai címzéseket. 3as rétegben dolgoznak. A routerek a routing tábla szerint
+            dolgozik, miszerint tudja, hogy melyik interfészén melyik hálózat van. Már nem csak LAN, hanem WAN
+            interfészeken is tud adatot továbbítani. IP-n keresztül komm. Az egyil legintelligensebb eszköz a hálózaton.
+            Ez definiál egy pontot, amin minden forgalomnak át kell mennie egy hálózatban.
+        </p>
+
+        <p>Gateway<br>
+            Átjáró: Ha default gateway, akkor egy protocol gateway, ha TCP/IP továbbítás szempontjából, ha nem a lokális
+            hálózatomban szeretnék kommunikálni, hanem máshol, akkor kell egy átjáró, egy forgalom irányító, aki
+            megnyitja a lehetőséget a külvilág felé.<br>
+            A másik, amikor különböző, de egymással komm. kívánó entitások között kell valamilyen átjárást biztosítani.
+            - Ez leginkább régen volt jellemző.
+        </p>
+
+        <h4 id="3/3">Felhőszolgáltatásokról <a href="#nav">Vissza a tartalomjegyzékhez</a></h4>
+        <p>Felhőszolgáltatások:<br>
+            Rugalmas, költségvetésben hatékonyabb, egyszerűbb bérelni, mint begfektetni, sok fejfájástól megmenti magát
+            az ember, stb..<br>
+            Típusai:<br>
+            Infrastruktúra-szolgáltatás - IaaS - kiszolgálókat és virtuális gépeket(VM), tárhelyet, hálózatokat,OR Rket
+            bérelhetünk<br>
+            Platformszolgáltatás - PaaS - Igény szerinti környezetet biztosítanak az alkalmazások fejlesztéséhez,
+            teszteléséhez, terjesztéséhez és felügyeletéhez.<br>
+            Szoftverszolgáltatás - SaaS - felhószolgáltatók üzemeltetik és kezelik az alkalmazásokat, valamint a háttér
+            infrastruktúrát, továbbá ők gondoskodnak a frissítések, javításokról és a karbantartási feladatokról is.<br>
+            NYilvános, Magán és Hibrid.
+        </p>
+
+        <h4 id="3/4">Alapszintű programok <a href="#nav">Vissza a tartalomjegyzékhez</a></h4>
+        <p>IPCONFIG<br>
+            Linux: ifconfig; ip a;<br>
+            Megkapjuk az egyes interfészeinknek az IP címeit, DNS szervercímeket, stb - saját jegyzetek!<br>
+            <br>
+            PING<br>
+            végpontokat ellenőrizhetünk vele. ping servername/IPadress<br>
+            Egy standard echo request küld és egy választ vár rá egy tolerálható idón belül.<br>
+            ping -c 6 google.hu<br>
+            <br>
+            Tracert, pathping - Linux: traceroute<br>
+            a forgalmat lehet ellenőrizni köztem és egy végpont között. A teljes útvonalat nézhetjük. Itt is van TTL,
+            routerenként -1, default 30. <br>
+            <br>
+            Nslookup - platformfüggetlen.<br>
+            DNS kérés manuálisan egy adott webszerverre vonatkozóan. <br>
+            <br>
+            Netstat - Megjeleníti a hálózati kapcsolatokat(bejövő, kimenő egyaránat), az irányítótáblákat és más egyéb
+            hálózati statisztikát.<br>
+            <br>
+            SSH/Telnet - alkalmazásrétegbeli protokolok.<br>
+            SSH a távoli számítógépre való bejelentkezésre van, nyilvános kulcsú titkosítást használ a stávoli gép
+            hitelesítésére, opcionálisan a távoli gép is hitelesíti a felhasználót.<br>
+            <br>
+            Telnet - winbe a szolgáltatásoknál engedélyezni kell, nincs benne titkosítás, arra használjuk, hogy egy
+            szolgáltatás hallgat e egy adott porton. telnet hostname port -> telnet 1.1.1.1 1234<br>
+            <br>
+            Wireshark - packet sniffer - hálózati problémák felderítésére, teljesítmény analizálására, szoftverek nyomon
+            követése, biztonsági rések felderítésére, debuggolásra, lehallgatásra, hálózatok megismerésére..
+        </p>
+        <a href="#nav">Vissza a tartalomjegyzékhez</a>
+    </div>
+    <hr>
+
+    <div id="4">
+        <h3>Informatikai Tudatosság <a href="#nav">Vissza a tartalomjegyzékhez</a></h3>
+        <h4 id="4/1">Biztonság az Informatikában</h4>
+        <p>Védekezni - technológiákkal, folyamat/irányítás, tudatosság<br>
+            <br>
+            Email és levelezés<br>
+            <br>
+            Böngészés - Internet/Intranet(zárt)<br>
+            Hétköznapi veszélyek: Internet, okos eszközök, IoT, minden, amiben szoftverek futnak - hasonlóképp kell
+            kezelni, mint egy számítógépet.<br>
+            Kommunikáció - wifi, bluetooth, internetmegosztás, email, sms, stb.. <br>
+            Adatok kezelése és védelme - hozzáférés korlátozása, tevékenységek naplózása(integritás), adatok
+            elérhetőségének biztosítása, biztonsági mentések.<br>
+            Közösségi oldalak - nyilvánosan elérhetőek, felhasználói újjlenyomat.<br>
+            Felhő szolg. - /egyfajta bizt. mentés/<br>
+            IoT és M2M - Internet of Things & Machine to Machine, ezekre is fokozottan oda kell figyelni.<br>
+            <br>
+            Jelszóhasználat: felhasznnév/jelszó->azonosítás. Gyakori jelszavak. Időközönként változtassul és ha esélyes,
+            hogy megtudták, cseréljük azonnal.<br>
+            <br>
+            Fizikai biztonság: 3 fő terület. <br>
+            Belépés ellen<br>
+            adminisztratív kontrollok: szabályzatok, figyelmeztető feliratok. Elrettentés . fizikai szabályozás:
+            hozzáférési szintek<br>
+            behatolási/belépési kontrollok: falak, ablakok, zárak. Tervezésnél figyelembe venni, hogy pl a vendégek hol
+            tudnak mászkáni. Üzleti cél/stratégia szerinti kialakítás.<br>
+            Technikai kontrollok: Belépést szabályozó rendszerek - Kapuk, belépőkártya-olvasó, kamerarendszerek -,
+            mindazok a technológiai eszközök, amelyek a belépést valamilyen módon szabályozzák.<br>
+            Környezeti védelem: Természeti katasztrófa és emberi katasztrófa. Víz, tűz, áramkimaradás. Poroltó,
+            szünetmentes táp, villám. Emberi: szándékos károkozás, robbantás.
+            <br>
+            Mobileszközök használata: értéke és a rajta található adatok, sok esetben a nagyobb gáz ez. fizikai
+            védelem(pin, nyomkövetés) -> az adatok védelme(titkosítás, bizt.mentés, felhő) -> kommunikáció(beszélgetés
+            kihallgatása, adathalász hívások, multimédiás üzenetek, wifihálózatok, bluetooth eszközök(kapcsoljuk ki ha
+            nem kell)...<br>
+            <br>
+            Szügség van-e titkosításra? - lényege, hogy a nem cél személy a tartalmat ne láthassa. Matematikai
+            algoritmus révén/szabály alapján a tartalmat elváltoztatja, amely csak egy kulcsal fejthető vissza.<br>
+            Két fő fajtája van: Szimmetrikus és aszimmetrikus:<br>
+            Szimmetrikusnak titkos kulcsa van - egy kulcsa van. A kódolás kulcsa a dekódolás kulcsa is. Előnye a
+            gyorsaság, hátránya, ha a támadó hozzájut ahhoz az EGY kulcshoz.<br>
+            <br>
+            Aszimmetrikusnak publikus kulcsa van - két kulcsa van. Az egyik a publikus, a másik a privát. <br>
+            Működése: A publikus kulcsot megosztom a másik féllel. Ez arra szolgál, ha nekem küldenek üzenete, akkor
+            ezzek a kulcsal fogják letitkosítani. Én azt visszafejteni a saját-privát kulcsommal tudom.<br>
+            RSA generál egy public és egy private kulcsot, a két public kucsot kicseréljük a féllel.. Ilyen a https,
+            ssl, ssh, bitcoin, PGP/GPG<br>
+            <br>
+            DES - Data Encrypion Algorithm - 56bit 2^56 ~ 7.0257E+16 (percek alatt)<br>
+            <br>
+            AES-256 - Advanced Encrypion Standard 256 - 256bit 2^256 ~ 1.1579E+77 (kb. fél év)<br>
+            <br>
+            Legkisebb jogosultság elve: /toy story történet - majdnem törölték véletlen/ felhasználó/senior
+            felhasználó/adminisztrátorok. Sok helyen hozzáférnek a felhasználók, amihez nem is kellene. Informatikában:
+            könyvtár vagy alkalmazás-hozzáférés, való életben:egy területre való bejutás.<br>
+            A rendszerhozzáférés működése/lépései: Azonosítás(felhasználónév), Hitelesítés(jelszó),
+            Engedélyezés(jogosultságok alapján), Auditálás(eseménynapló - a műveleteinket(akár engedélyezett, akár nem)
+            rögzítik)<br>
+            3 szinten szügséges ezzel foglalkozni:<br>
+            Folyamatok - új és eltávozott alkalmazott, vállalton belüli mozgás, alkalmazás hozzáférés, szoftver
+            kérés<br>
+            Technológiák - központi felhasználó management eszköz -egységes kezelés és nyomon követés. Ahol nem
+            lehetséges, egységes folyamatok kidolgozása - <br>
+            Auditálás - kiszűrni a direkt és a véletlen visszaéléseket. Incidensek - adattörlés, adatlopás
+            elkerülése.<br>
+            <br>
+            PII<br>
+            Indirekt és direkt személyes adatok<-ami meghatároz egy embert, személyi szám, TAJ-szám. Az indirekt, amikor
+                csak más rendszerekkel összekötve tudnak meghatározni<-lokációadat a telefonon és a telefon hozzákötése
+                a személyhez. GDPR cégeknek meg kell védeniük. Támadásokat lehet végrehajtani a személyes adatokkal,
+                call centeres azonosítás, adatgyüjtés, más támadás előkészítése. Cégek esetében hírnév, bizalomvesztés,
+                birságok.<br>
+                Cookiek, mobilalkalmazások során, hogy milyen adatok/szolgáltatások szükségesek.<br>
+                <br>
+                Adathalászat: Megnövekedett az elmúlt években. Átlagosan 146 múlva veszik észre. <br>
+                Tömeges: phishing - nem szelektálnak, tömeges címlisták.<br>
+                Szigonyzás(egy csoportot): spear phishing - tudatosan választanak ki csoportot, HR, informatikai vagy
+                pénzügyes.<br>
+                Bálnavadászat: whaling - felső vezetők a célpontok, ez álltal küldenek hamis kéréseket. <br>
+                1.kiválasztás és adatgyüjtés(profile) 2.támadási pontok gyüjtése 3.Támadás előkészítése - email, weblap
+                4.Támadás indítása -> Várakozás, monitorozás->adatlopás, visszaélés.<br>
+                Tudatosság és technológiai védekezés, antivírus, virtualizáció, jogok korlátozása, stb..<br>
+                <br>
+                Zsarolóvírusok: kártékony szoftverek. ransomware.<br>
+                <br>
+                DoS, DDos: túlterheléses, elosztott túlterheléses támadás. Egy szervert lelassítan, megállítani,
+                elérhetetlenné tenni. Botnet-Master server.
+        </p>
+
+        <h4 id="4/2">GDPR - <a href="#nav">Vissza a tartalomjegyzékhez</a></h4>
+        <p>
+            EZT MÉG KI KELL JEGYZETELNI :(
+        </p>
+        <a href="#nav">Vissza a tartalomjegyzékhez</a>
+    </div>
+    <hr>
+
+    <div id="5">
+        <h3>Fejlesztői Környezet Kialakítása <a href="#nav">Vissza a tartalomjegyzékhez</a></h3>
+        <h4 id="5/1">Visual Studio Code, Node.js</h4>
+        <p>Google Chrome és Visual Studio Code:<br>
+            Chrome: "az egyik vezető böngésző", google.com/chrome.<br>
+            <br>
+            VS Code: a microsoft egy kódszerkesztője, igen széles skálán mozog, hogy mit lehet vele, a Microsoft Visual
+            Studio kistestvére. IDE - INTEGRATED Development Enviroment: is software for building applications that
+            combines common developer tools into a single graphical user interface (GUI)<br>
+            VS Code és bővítményei:<br>
+            Betűméret változtatása:ctrl+'+' vagy ctrl+'-';<br>
+            Live Server: ez biztosítja a fileokat a böngészőnek, ez egy extension - bővítmény.<br>
+            Linux keyboard shortuts:<br>
+            https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf<br>
+            <br>
+            Node.js telepítése: Node.js a chrome motorját használva futtat javascriptet(futtató környezet) böngésző
+            nélül. <br>
+            node -v és npm -v : a node ill. a node package manager verzióját mutatja meg.<br>
+            <br>
+            VS Code felhasználói felülete:<br>
+            https://code.visualstudio.com/docs/getstarted/userinterface<br>
+            <br>
+            Mappa rendszerben dolgozik.. <br>
+            alt+ctrl+r - tartalmazó mappa megnyitása<br>
+            <br>
+            VS C - szövegszerkesztés: <br>
+            CTRL+D - A kijelölt szöveg következő előfordulásának a kijelöléshez adása VAGY! ha a kurzort a szó elejére
+            vagy végére visszük, a teljes szót kijelöli<br>
+            CTRLF2 - a szöveg összes előfordulásának kijelölése<br>
+            ALT+UP/DOWN - az aktív sor mozgatása fel/le - vagy a kijelölt sorok.<br>
+            ALT+SHIFT+UP/DOWN - az aktív sor felfelé/lefelé másolása. LINUXON NEM EZ!!!!!!!! <br>
+            CTRL+SHIFT+ALT+UP/DOWN - a linuxon és csak a num.pad nyilaival.. <br>
+            CTRL+PAGEUP/PAGEDOWN - váltás a tabok között<br>
+        </p>
+
+
+        <h4 id="5/2">Git és GitHub <a href="#nav">Vissza a tartalomjegyzékhez</a></h4>
+        <p>Git:<br>
+            Linux Tovalds alkotta, verziókövetés a Linux kernelnél, céljai: gyorsaság, egyszerűség, branchek(elágazások)
+            támogatása, teljes elosztottság.<br>
+            git-scm.com - Git Source Code Management. Innen töltik le a windowsosok..<br>
+            <br>
+            ??Milyen sorvéget használ az én git-em, és hogy tudom win&linux között működőképessé tenni..<br>
+            ??Git credential - hogy tudok több felhasználót kreálni és váltani közöttük?<br>
+            <br>
+            Ismerkedés a GitHub-al: hogy a gittel másokkal együtt tudjunk dolgozni, kell egy közponi szerver.<br>
+            https://guides.github.com/activities/hello-world/<br>
+            https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration<br>
+            New Repository: jobbra fent a + ikon REPOSITORY - tároló, gyüjtemény<br>
+            <br>
+            Clone a Repository: clónozás, amikor egy meglévő reposistory-t "lemásolom" egy a gépemen lévő mappába és
+            beállítom a gitet, hogy figyelje a változásokat. Egy parancssort nyitok abba a mappába, ahova szeretném
+            klónozni és : git clone reposytory_url.<br>
+            <br>
+            FORK : Kiválasztom valaki más repository-ját, rányomok a fork gombra és így létrejön egy új repository az én
+            fiókomban, amit utána én fejleszthetek a kedvemre tovább.<br>
+            <br>
+            Git fileok állapotai fejlesztések során:<br>
+            Untracked: A Git nem figyeli a f.-t, újonnan létrehozott f-oknál jellemző.<br>
+            Unmodified: A Git követi a f-t és mi nem módosítottunk rajta. Ez áll.ban az újonnan letöltött f.-ok
+            állapota.<br>
+            Modified: A Git követi és mi módosítottunk is rajta.<br>
+            Staged: A Git követi, mi módosítottuk és a módosítás be is fog kerülni az adatbázisba/repositoryba.<br>
+            <img src="" alt="">
+            <br>
+            A stage az a terület, ahol a fileok elő vannak készítve a mentésre. A Git magányak menti a változásokat.
+            <br>
+            Tehát: ha egy f.-t létrehozok, a 'git add' parancsah hozzáadom először a Stagin area-hoz, ami a mentésre
+            előkészített f.-ok helye. Ezután a 'git commit' parancsal, a stageing areaból hozzáadjuk a tartalmát az
+            adatbázishoz, állapota unmodified lesz.<br>
+            Ha módosítunk egy filet: állapota modified lesz. A 'git add' parancsal hozzáadjuk a stageing area-hoz, ahol
+            az előkészitett f.-ink vannak, majd a 'git commit' parancsal véglegesítjük az adatbázisunkban.<br>
+            <br>
+            egy kis help:<br>
+            https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository<br>
+            <br>
+            git config --global user.email "examp@host.com"<br>
+            git config --global user.name "Name Here"<br>
+            <br>
+            git config --local user.email "examp@host.com"<br>
+            git config --local user.name "Name Here"<br>
+            <br>
+            git config --global --edit<br>
+            git config --local --edit<br>
+            <br>
+            git config --list<br>
+            /*************<br>
+            git clone<br>
+            meló és ha kész:<br>
+            git add<br>
+            git commit -m "megjegyzés"<br>
+            git fetch<br>
+            git status<br>
+            git pull - biztonságból<br>
+            git push<br>
+            ***********/<br>
+            <br>
+            git fetch - megnézi, hogy változott-e a szerver tartalma, de nem írja felül a helyi Repo-t.<br>
+            <img src="" alt="">
+            <br>
+            https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+        </p>
+        <a href="#nav">Vissza a tartalomjegyzékhez</a>
+    </div>
+    <hr>
+
+    <div id="6">
+        <h3> </h3>
+        <h4 id="6/1">A HTML Megismerése <a href="#nav">Vissza a tartalomjegyzékhez</a></h4>
+
+        <p>HTML - Hyper Text Markup Language -<br>
+            Nem önállóan futtatható progrogramok készítésére van, hanem egy "jelölőnyelv". A browser rendereli össze a
+            végső megjelenését egy weblapnak, a "megjelölt" mődon(TAGek). A World Wide Web Consortium fejleszti, a
+            CSS(Cascading Style Sheet)-el együtt.<br>
+            <br>
+            HTML felépítése: kiterjesztése .html, tartalma, ha az első sora -!DOCTYPE html , ez a korábbi verziók
+            kompatibilitása miatt van, manapság már akár el is hagyható. html /html, aztán head /head ezekbe kerülnek az
+            oldal beállításai, mint a title, /title; különböző metaadatok.<br>
+            Néhány elemnek, tagnek nincs tartalma, akkor nincs zázó tage, ezekkel beállításokat tudunk eszközölni.<br>
+            meta charset="" - karakterkészleteket állíthatunk be vele, UTF-et használunk - Unicode Transformation
+            Format. UTF-8 8bites, 1-4 byte hosszú lehet. UTF-16, 16bites, gyakorlatilag képes az egész Unicode
+            készlettáblázatot magába foglalni, nagy OP R és fejlesztő környezetek használják. Az első 128 character a
+            Unicodeokban az ASCII első 128 karaktere(azok bináris értéke). <br>
+            <br>
+            content="width=device-width" - az oldal szélességének az ezközhöz való optimalizálása.<br>
+            initial-scale=1.0 - ne legyen nagyítás az oldalon<br>
+            Utána body /body. A láthato tartalmak ezek a tagek közé kerülnek.<br>
+            <br>
+            Szövegformázó elemek<br>
+            -header: címsorok neve *h1*-*h6*. A kereső motokok is kiemelt figyelmet fordítanak rá, hogy a címsor szövege
+            összefüggésben van-e az alatta található tartalommal.. Egy oldalon általlában egy h1 van és a többi
+            valamennyivel kisebb.<br>
+            -p: bekezdés.<br>
+            -em(emphasized text): hangsúlyozottan, kiemelt szövegként jeleníti meg, dölt betűk. Ez az italic<br>
+            -strong(strong text): még erősebb kihangsúlyozás, bold.<br>
+            <br>
+            Block and Inline elements: A block-level element always starts on a new line and takes up the full width
+            available és nem engednek maguk mellé más elemet.<br>
+            An inline element does not start on a new line and it only takes up as much width as necessary.<br>
+            Note: An inline elemet can NOT contain a block-level element.<br>
+            <br>
+            ChromeDevTools: F12/jobbclick és kiválaszt. Elements<br>
+            Inspector in Firefox: CTRL+SHIFT+C.<br>
+            <br>
+            URL - Uniform Resource Locator / https://en.wikipedia.org/wiki/URL /<br>
+            A typical Unifor Resource Locator indicates a protocol(http), a hostname(example.com) and a
+            filename(index.html)<br>
+            <br>
+            Root URL - https://example.com . A root URL mindig a domain név gyökerétőltől nézi a címet. /index.html<br>
+            Relative path: RootURL-en belül hova "akarok menni" /about/about.html . Ha relative, az adott könyvtárhoz
+            viszonyítva, ahol vagyok.<br>
+            Absolute URL: rootDomain+relativePath<br>
+            <br>
+            Ugrás id-re/#-re: Ha az oldalon belül ugrok #id-re, anchor-nak hívják. Adok egy elemnek egy id-t és utána
+            egy 'a' tegen belül a href-ben megadom az #id-t.<br>
+            <br>
+            Listák -felsorolások: HTML-ben listákat használunk. Fajtái: UNORDERED és ORDERED. Az utóbbi a logikai
+            szempontot is nézi, vagyis számokkal fogja ellátni, sorrendet használ. Az Unordered pedig egyenrangú lista
+            elemeket készit.<br>
+            Unordered: ul, /ul és az elemeit pedig li, /li közé teszem<br>
+            Ordered: ol és /ol közé li, /li elemeket használva.<br>
+            CSS-szel hatékonyan lehet testre szabni.<br>
+            https://www.w3schools.com/css/css_list.asp<br>
+            <br>
+            Képek elhelyezése:<br>
+            img tag, src=""-forrása source, alt="" - alternetive text/ha a kép nem betölthető, ez a szöveg jelenik
+            meg.<br>
+            <br>
+            Linkek: Az "a' - ANCHOR taggel tudok linkeket elhelyezni. Uinform Resource Location fuggvényében lehet külső
+            weboldalra mutató vagy akár helyi. Ha a megjelenytendő szöveghez egy img tag-et használok, képpel is tudok
+            navigálni.<br>
+            Új ablakban való megnyitás, néha marketing célból.. <br>
+            <br>
+            Elemek egymásba ágyazások: Csak olyan elemekbe lehet beágyazni, ahol vannak tartalmak.<br>
+            <br>
+            w3c validator - ellenőrizni a HTML kódom, hogy hol van szintatikai hiba.<br>
+            <br>
+            Táblázatok: struktúrált szerkezetekhet használjuk. table, /table tegek. Fejléceket/headereket adhatunk a
+            táblázatoknak, a th,/th. A sorok a td, /td - table row, és a cellák a td,/td - table data - tagek közé
+            kerülnek. caption,/caption a táblázat fölé írathatunk ki pl egy címet vagy leírást.<br>
+            Note: The 'td' elements are the data containers of the table.<br>
+            They can contain all sorts of HTML elements; text, images, lists, other tables, etc.<br>
+            <br>
+            Táblázat részletei:<br>
+            tfoot,/tfoot - lábjegyzet a táblázathoz, egy td vag tr-be ágyazzuk be, különben felülre kerül.<br>
+            <br>
+            Cellák összevonása: Sorokban - rowspan és oszlopokban colspan. Ezek nem tag-ek, hanem attribútumok.<br>
+        </p>
+        <a href="#nav">Vissza a tartalomjegyzékhez</a>
+
+        <h4 id="6/2">Gitre Publikálni!!!!! <a href="#nav">Vissza a tartalomjegyzékhez</a></h4>
+        <p>
+            Ezt is kicsit át kell majd néznem, de az addigi projekjeimben biztos lesz ilyen. :)
+        </p>
+
+        <a href="#nav">Vissza a tartalomjegyzékhez</a>
+    </div>
+    <hr>
+
+
+</body>
+
+</html>
